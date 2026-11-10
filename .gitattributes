@@ -16,3 +16,6 @@ delivery/**/*.csv -filter diff -merge -text
 *.slurm -text
 *.sh -text
 artifacts/unc/guarded_l40s_8756544/production_build/** -text
+
+# Keep the data folder README readable on GitHub.
+data/README.md -filter -diff -merge text
