@@ -1,0 +1,18 @@
+Horizon,Model,"Time per training round (one fit), median (s)",Total training time (min),Total inference time (min)
+6-year,TabICL,1.17,1.11,8.42
+6-year,CatBoost,0.51,1.77,0.01
+6-year,LightGBM,0.51,1.26,0.02
+6-year,Penalized LR,0.71,1.45,0.01
+6-year,RealMLP,9.54,10.01,0.01
+6-year,GAT,58.37,62.50,0.80
+6-year,Decision tree,0.05,0.25,0.01
+6-year,Gaussian NB,0.01,0.02,0.01
+8-year,TabICL,1.21,1.06,7.36
+8-year,CatBoost,0.53,1.80,0.01
+8-year,LightGBM,0.43,1.12,0.02
+8-year,Penalized LR,0.51,1.12,0.01
+8-year,RealMLP,6.99,8.28,0.01
+8-year,GAT,174.83,204.90,0.90
+8-year,Decision tree,0.05,0.24,0.02
+8-year,Gaussian NB,0.01,0.02,0.01
+Total,All models,—,296.89,17.62

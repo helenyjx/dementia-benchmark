@@ -254,6 +254,35 @@ def t19_sensitivity():
         {NAMES[m]: i for i, m in enumerate(MODELS)}) if c.name == 'Model' else c, kind='stable')
 
 
+# FP32 capacity (TFLOPS) of the devices used; the runtime table is normalized to the RTX 5070 Ti.
+FP32_TFLOPS = {"NVIDIA GeForce RTX 5070 Ti": 43.904, "NVIDIA GeForce RTX 3070 Ti": 21.74976, "NVIDIA L40S": 91.6}
+FP32_REFERENCE = "NVIDIA GeForce RTX 5070 Ti"
+
+
+def t17_runtime_fp32():
+    """Table S20 as printed in the supplement: primary outcome, FP32-equivalent times on the reference device.
+
+    Equivalent time = measured time x (FP32 capacity of the device used / FP32 capacity of the reference device);
+    CPU times are unchanged. This is an idealized normalization, not a same-device measurement.
+    """
+    d = ordered(read("runtime.csv"))
+    factor = d["gpu"].map(lambda g: 1.0 if pd.isna(g) else FP32_TFLOPS[g] / FP32_TFLOPS[FP32_REFERENCE])
+    out = pd.DataFrame({
+        "Horizon": d["horizon"].map(lambda h: f"{h}-year"),
+        "Model": d["model"].map(NAMES),
+        "Time per training round (one fit), median (s)": (d["median_seconds_per_fit"] * factor).map(lambda v: f"{v:.2f}"),
+        "Total training time (min)": d["total_minutes"] * factor,
+        "Total inference time (min)": d["total_prediction_minutes"] * factor})
+    total = pd.DataFrame([{"Horizon": "Total", "Model": "All models",
+                           "Time per training round (one fit), median (s)": "\u2014",
+                           "Total training time (min)": out["Total training time (min)"].sum(),
+                           "Total inference time (min)": out["Total inference time (min)"].sum()}])
+    out = pd.concat([out, total], ignore_index=True)
+    for col in ("Total training time (min)", "Total inference time (min)"):
+        out[col] = out[col].map(lambda v: f"{v:.2f}")
+    return out
+
+
 def build():
     i, t = read('internal_metrics.csv'), read('temporal_metrics.csv')
     s13a, s13b = t13_accuracy_complete()
@@ -276,6 +305,7 @@ def build():
         "S18": horizon_comparison("internal"),
         "S19": horizon_comparison("temporal"),
         "S20": t17_runtime(),
+        "S20_FP32_equivalent": t17_runtime_fp32(),
         "S21": s18c,
         "S22a": internal[internal.Horizon.eq("6-year")],
         "S22b": internal[internal.Horizon.eq("8-year")],

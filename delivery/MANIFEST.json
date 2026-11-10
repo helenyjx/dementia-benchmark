@@ -281,6 +281,11 @@
    "sha256": "49bd8f9c942232d90ea8ce4f78e966c5f6f603bc443ee2e9c3c1055ac824e100"
   },
   {
+   "path": "tables/runtime/S20_FP32_equivalent.csv",
+   "bytes": 660,
+   "sha256": "ddcfb667e421116c60952bddf06a6c85b55289b709927841798aaed5fa71c5bd"
+  },
+  {
    "path": "tables/runtime/runtime_summary.csv",
    "bytes": 1182,
    "sha256": "de5d55935066fd8050f0b2389f2e7079a3148f0e5bfed3b3815abde3f7cf173b"
