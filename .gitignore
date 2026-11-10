@@ -1,0 +1,14 @@
+# HRS data and derived participant-level material
+data/*
+!data/README.md
+artifacts/*
+!artifacts/README.md
+outputs/
+packages/
+tmp/
+__pycache__/
+.venv*/
+.ipynb_checkpoints/
+.DS_Store
+.Rhistory
+.RData

@@ -1,0 +1,18 @@
+data/2000-2006/** filter=lfs diff=lfs merge=lfs -text
+data/** filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text
+*.dta filter=lfs diff=lfs merge=lfs -text
+*.sav filter=lfs diff=lfs merge=lfs -text
+*.rda filter=lfs diff=lfs merge=lfs -text
+*.parquet filter=lfs diff=lfs merge=lfs -text
+
+# Small publication tables should be directly readable on GitHub.
+delivery/** -text
+delivery/**/*.csv -filter diff -merge -text
+# Frozen scientific source hashes must survive Windows/Linux checkouts.
+*.py -text
+*.cc -text
+*.cu -text
+*.slurm -text
+*.sh -text
+artifacts/unc/guarded_l40s_8756544/production_build/** -text
