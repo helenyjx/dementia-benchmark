@@ -1,4 +1,4 @@
-Horizon,Model,"Time per training round (one fit), median (s)",Total training time (min),Total inference time (min)
+Horizon,Model,"Time per training epoch, median (s)",Total training time (min),Total inference time (min)
 6-year,TabICL,1.17,1.11,8.42
 6-year,CatBoost,0.51,1.77,0.01
 6-year,LightGBM,0.51,1.26,0.02

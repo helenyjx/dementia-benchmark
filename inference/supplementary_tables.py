@@ -270,11 +270,11 @@ def t17_runtime_fp32():
     out = pd.DataFrame({
         "Horizon": d["horizon"].map(lambda h: f"{h}-year"),
         "Model": d["model"].map(NAMES),
-        "Time per training round (one fit), median (s)": (d["median_seconds_per_fit"] * factor).map(lambda v: f"{v:.2f}"),
+        "Time per training epoch, median (s)": (d["median_seconds_per_fit"] * factor).map(lambda v: f"{v:.2f}"),
         "Total training time (min)": d["total_minutes"] * factor,
         "Total inference time (min)": d["total_prediction_minutes"] * factor})
     total = pd.DataFrame([{"Horizon": "Total", "Model": "All models",
-                           "Time per training round (one fit), median (s)": "\u2014",
+                           "Time per training epoch, median (s)": "\u2014",
                            "Total training time (min)": out["Total training time (min)"].sum(),
                            "Total inference time (min)": out["Total inference time (min)"].sum()}])
     out = pd.concat([out, total], ignore_index=True)
