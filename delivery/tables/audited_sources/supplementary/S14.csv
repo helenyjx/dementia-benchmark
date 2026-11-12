@@ -1,4 +1,4 @@
-Horizon,Group,n (% of cohort),Cases (%),TabICL AUROC / AUPRC (%),CatBoost AUROC / AUPRC (%),LightGBM AUROC / AUPRC (%),Penalized LR AUROC / AUPRC (%),RealMLP AUROC / AUPRC (%),GAT AUROC / AUPRC (%),Decision tree AUROC / AUPRC (%),Gaussian NB AUROC / AUPRC (%)
+Horizon,Group,n (% of sample),Cases (%),TabICL AUROC / AUPRC (%),CatBoost AUROC / AUPRC (%),LightGBM AUROC / AUPRC (%),Penalized LR AUROC / AUPRC (%),RealMLP AUROC / AUPRC (%),GAT AUROC / AUPRC (%),Decision tree AUROC / AUPRC (%),Gaussian NB AUROC / AUPRC (%)
 6-year,Returning participant,"6,578 (46.6)",700 (10.6),80.4 / 35.9,80.2 / 35.1,79.6 / 35.1,79.3 / 34.3,79.5 / 35.3,78.2 / 30.6,73.8 / 23.9,71.8 / 21.2
 6-year,"New participant, development household",689 (4.9),56 (8.1),84.5 / 47.8,84.4 / 43.9,83.2 / 42.3,84.1 / 43.3,83.8 / 46.3,83.1 / 39.6,74.8 / 26.8,73.7 / 24.0
 6-year,New participant and household,"6,856 (48.5)",407 (5.9),83.6 / 28.1,82.8 / 26.0,83.2 / 25.6,81.6 / 25.5,82.6 / 25.9,81.2 / 24.7,74.9 / 14.6,76.2 / 14.9

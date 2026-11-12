@@ -2,7 +2,7 @@
 
 Definitions, sources, and coding of the 60 baseline predictors (94 model inputs). Source labels are quoted from the RAND HRS Longitudinal File 2020 (V2) codebook (`randhrs1992_2020v2`); race/ethnicity is from the HRS Tracker 2022 (`trk2022tr_r`); "don't do" answers are from the HRS 2000 and 2010 core interviews. `w` in a RAND name is the wave: 5 = 2000 (development baseline), 10 = 2010 (external baseline).
 
-Coding is produced by `preprocess_2000.ipynb` / `preprocess_2002-2016.ipynb` and the data-management notebooks. "Missing (n)" is the number of missing values among the 13,246 participants of the 2000 analytic cohort at the 6-year horizon (before imputation). All eligible participants with an ascertained outcome are analyzed regardless of predictor missingness: missing predictors are imputed with miceforest fitted on the training subset only and applied unchanged to the validation, test and temporal-validation data.
+Coding is produced by `preprocess_2000.ipynb` / `preprocess_2002-2016.ipynb` and the data-management notebooks. "Missing (n)" is the number of missing values among the 13,246 participants of the 2000 analytic cohort at the 6-year horizon (before imputation). All eligible participants with a known outcome are analyzed regardless of predictor missingness: missing predictors are imputed with miceforest fitted on the training subset only and applied unchanged to the validation, test and temporal-validation data.
 
 **Missing values.** RAND special missing codes (e.g. `.D` don't know, `.R` refused, `.M` other missing, `.X` "don't do") are read as missing. The one exception is the "don't do" answer for 12 functional items, which is kept as its own category (see Functional limitations).
 

@@ -101,8 +101,9 @@ def s1():
     svg = seq(svg, r'Baseline dementia status unknown: [\d,]+', [f'Baseline dementia status unknown: {n(flow[k]["excluded: baseline dementia status unknown"])}' for k in base])
     svg = seq(svg, r'>n = [\d,]+<', [f'>n = {n(flow[k]["eligible"])}<' for k in base])
     svg = seq(svg, r'regardless of dementia: [\d,]+', [f'regardless of dementia: {n(flow[k]["excluded: died by final wave"])}' for k in order])
-    svg = seq(svg, r'Not assessed or unresolved: [\d,]+',
-              [f'Not assessed or unresolved: {n(int(flow[k]["excluded: loss to follow-up"]) + int(flow[k]["excluded: unresolved after final interview"]))}' for k in order])
+    # The label has two lines ("Loss to follow-up or" / "outcome not available: N"); only the count changes.
+    svg = seq(svg, r'outcome not available: [\d,]+',
+              [f'outcome not available: {n(int(flow[k]["excluded: loss to follow-up"]) + int(flow[k]["excluded: outcome not available after final interview"]))}' for k in order])
     svg = seq(svg, r'n = [\d,]+ \| Incident dementia: [\d,]+',
               [f'n = {n(flow[k]["analytic cohort"])} | Incident dementia: {n(flow[k]["incident dementia"])}' for k in order])
     return svg, (1704.4, 709.6, 2.5)

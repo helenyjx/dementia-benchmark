@@ -1,0 +1,12 @@
+Classification,Outcome Y,2000: 6-year (2000-2006),2000: 8-year (2000-2008),2010: 6-year (2010-2016),2010: 8-year (2010-2018)
+Eligible sample size at baseline,baseline,"17,336","17,336","19,243","19,243"
+Analytic sample size,1 or 0,"13,246","12,236","14,123","11,603"
+Incident dementia: dementia at any follow-up assessment and alive at the final wave,1,"1,181","1,309","1,163","1,039"
+"Missing intermediate assessment, dementia identified later",1 (subset),51,98,53,52
+Adequately observed non-dementia: confirmed dementia-free at final wave,0,"12,065","10,927","12,960","10,564"
+"Missing assessments, subsequently confirmed dementia-free at final assessment",0 (subset),407,580,464,478
+"Loss to follow-up: alive or vital status unknown, no final-wave assessment",Excluded,"1,212","1,223","2,291","3,818"
+Outcome not available: dementia status undetermined after final interview,Excluded,1,1,3,2
+"Death: died before final wave, any dementia history",Excluded,"2,877","3,876","2,826","3,820"
+"Died, dementia observed",Excluded (subset),403,702,427,690
+"Died, no dementia observed",Excluded (subset),"2,474","3,174","2,399","3,130"

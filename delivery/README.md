@@ -4,7 +4,8 @@
 | --- | --- |
 | `tables/audited_sources/` | Final aggregate CSV sources: performance with intervals, paired differences, calibration, decision curves, overlap, importance and runtime tables, plus `supplementary/` with the manuscript Table 1 and Supplementary Tables S1–S27 |
 | `tables/outcome_flow/` | Supplementary Table S1 (final audited counts for the four windows) |
-| `tables/runtime/` | Measured runtime summary, the editable workbook with the idealized hardware-normalized estimates, and `S20_FP32_equivalent.csv`, the Supplementary Table S20 printed in the manuscript (primary outcome; time per training epoch, total training time and total inference time, FP32-equivalent on an RTX 5070 Ti; built by `inference/supplementary_tables.py`) |
+| `tables/manuscript_format/` | Supplementary Tables S1, S9, S10 and S12 in the layout printed in the supplement (text labels, rounding and category names), built by `inference/supplementary_tables.py` from the audited sources |
+| `tables/runtime/` | Measured runtime summary, the editable workbook with the idealized hardware-normalized estimates, and `S20_FP32_equivalent.csv`, the Supplementary Table S20 printed in the manuscript (primary outcome; time per training epoch, total training time and total inference time, converted to a common reference GPU, an NVIDIA GeForce RTX 5070 Ti; built by `inference/supplementary_tables.py`) |
 | `verification/` | Saved completion, source, model, comparison and cross-device acceptance reports from the full run |
 | `MANIFEST.json` | SHA-256 and size of every file in this folder |
 

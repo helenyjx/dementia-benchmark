@@ -76,10 +76,76 @@ def s1_outcome_status():
     return read("S1_outcome_flow.csv")
 
 
+def _layout():
+    with open(os.path.join(os.path.dirname(__file__), 'manuscript_layout.json'), encoding='utf-8') as f:
+        return json.load(f)
+
+
+def s1_manuscript():
+    """Supplementary Table S1 as printed in the supplement (text labels, thousands separators)."""
+    d = read("S1_outcome_flow.csv")
+    labels = _layout()['S1']
+    assert len(labels) == len(d)
+    cols = {'2000-2006': '2000: 6-year (2000-2006)', '2000-2008': '2000: 8-year (2000-2008)',
+            '2010-2016': '2010: 6-year (2010-2016)', '2010-2018': '2010: 8-year (2010-2018)'}
+    out = pd.DataFrame({'Classification': [a for a, _ in labels], 'Outcome Y': [b for _, b in labels]})
+    for src, dst in cols.items():
+        out[dst] = d[src].map(lambda v: f'{int(v):,}')
+    return out
+
+
+def s9_manuscript():
+    """Supplementary Table S9: continuous and count predictors in the un-imputed 2000 analytic samples."""
+    d = read('S9_predictor_summary.csv')
+    d = d[d['population'] == 'all']
+    g = lambda x: f'{x:.6g}'
+    rows = []
+    for v in _layout()['S9_variables']:
+        for h in (6, 8):
+            r = d[(d['variable'] == v) & (d['horizon'] == h)].iloc[0]
+            rows.append({'Variable': v, 'Horizon': f'{h}-year', 'Observed n': str(int(r['observed'])),
+                         'Mean': f'{r["mean"]:.2f}', 'SD': f'{r["sd"]:.2f}', 'Min': g(r['min']),
+                         'Median': g(r['median']), 'Max': g(r['max']), 'Missing n': str(int(r['missing']))})
+    return pd.DataFrame(rows)
+
+
+def s10_manuscript():
+    """Supplementary Table S10: levels of categorical, ordinal and binary predictors (counts and percentages)."""
+    d = pd.read_csv(os.path.join(TABLES, 'S10_predictor_distribution.csv'), keep_default_na=False, dtype={'level': str})
+    d = d[d['population'] == 'all']
+    rows = []
+    for var, label, level in _layout()['S10']:
+        row = {'Variable': var, 'Category / code': label}
+        for h in (6, 8):
+            r = d[(d['variable'] == var) & (d['horizon'] == h) & (d['level'] == level)].iloc[0]
+            row[f'{h}-year n (%)'] = f'{int(r["count"]):,} ({100 * float(r["fraction_total"]):.1f})'
+        rows.append(row)
+    return pd.DataFrame(rows)
+
+
+def s12_manuscript():
+    """Supplementary Table S12: mean imputation, complete-case (no imputation) and MICE, 6-year horizon."""
+    d = read('S12_imputation_comparison_h6.csv')
+    key = {'Penalized LR': 'LR', 'Gaussian NB': 'GNB', 'Decision tree': 'DT'}
+    strategy = {'Mean imputation': 'mean', 'No imputation': 'complete_case', 'MICE': 'miceforest'}
+    cell = lambda q, m: (lambda x: f'{100 * x.estimate:.1f} ({100 * x.ci_low:.1f} to {100 * x.ci_high:.1f})')(
+        q[q['metric'] == m].iloc[0])
+    rows = []
+    for name in _layout()['S12_models']:
+        for label in _layout()['S12_strategies']:
+            q = d[(d['model'] == key.get(name, name)) & (d['strategy'] == strategy[label])]
+            n, cf = q['n_mean'].iloc[0], q['case_fraction'].iloc[0]
+            rows.append({'Model': name, 'Strategy': label, 'Test n': f'{int(round(n)):,}',
+                         'Cases': f'{int(round(n * cf)):,}', 'Prevalence (%)': f'{100 * cf:.1f}',
+                         'AUROC (%)': cell(q, 'AUROC'), 'AUPRC (%)': cell(q, 'AUPRC'),
+                         'Accuracy (%)': cell(q, 'Accuracy')})
+    return pd.DataFrame(rows)
+
+
 def t11_complete_vs_incomplete():
     d = read('complete_vs_incomplete.csv')
     return pd.DataFrame({
-        'Cohort': d['cohort'], 'Horizon': d['horizon (years)'].map(lambda h: f'{h}-year'),
+        'Baseline sample': d['cohort'], 'Horizon': d['horizon (years)'].map(lambda h: f'{h}-year'),
         'Characteristic': d['characteristic'],
         'Complete predictors': [f'{a:.2f}' if max(a, b) < 10 else f'{a:.1f}' for a, b in zip(d['complete predictors'], d['incomplete predictors'])],
         'Incomplete predictors': [f'{b:.2f}' if max(a, b) < 10 else f'{b:.1f}' for a, b in zip(d['complete predictors'], d['incomplete predictors'])],
@@ -97,13 +163,13 @@ def t12_overlap():
         for g in groups:
             first = b[(b['h'] == h) & (b['group'] == g)].iloc[0]
             row = {'Horizon': f'{h}-year', 'Group': g[0].upper() + g[1:],
-                   'n (% of cohort)': f'{r[g]:,} ({100 * r[g] / n:.1f})',
+                   'n (% of sample)': f'{r[g]:,} ({100 * r[g] / n:.1f})',
                    'Cases (%)': f'{first["cases"]:,} ({100 * first["cases"] / first["n"]:.1f})'}
             for _, m in b[(b['h'] == h) & (b['group'] == g)].iterrows():
                 row[f'{NAMES[m["model"]]} AUROC / AUPRC (%)'] = f'{m["AUROC"]:.1f} / {m["AUPRC"]:.1f}'
             rows.append(row)
         rows.append({'Horizon': f'{h}-year', 'Group': 'Households in 2010 cohort, of which also in 2000 cohort',
-                     'n (% of cohort)': f'{r["households in 2010 cohort"]:,}, of which {r["of which also in 2000 cohort"]:,} '
+                     'n (% of sample)': f'{r["households in 2010 cohort"]:,}, of which {r["of which also in 2000 cohort"]:,} '
                                         f'({100 * r["of which also in 2000 cohort"] / r["households in 2010 cohort"]:.1f})'})
     return pd.DataFrame(rows).fillna('')
 
@@ -246,7 +312,7 @@ def t19_sensitivity():
         for label, d in (('Assessed dementia-free at any follow-up wave (sensitivity)', s),
                          ('Assessed dementia-free at the final wave (primary)', p)):
             w = metric_table(d, metrics)
-            w.insert(0, 'Non-case definition', label)
+            w.insert(0, 'Definition of participants without dementia', label)
             w.insert(0, 'Validation', setting)
             out.append(w)
     out = pd.concat(out, ignore_index=True)
@@ -260,10 +326,11 @@ FP32_REFERENCE = "NVIDIA GeForce RTX 5070 Ti"
 
 
 def t17_runtime_fp32():
-    """Table S20 as printed in the supplement: primary outcome, FP32-equivalent times on the reference device.
+    """Table S20 as printed in the supplement: primary outcome, times converted to a common reference GPU.
 
-    Equivalent time = measured time x (FP32 capacity of the device used / FP32 capacity of the reference device);
-    CPU times are unchanged. This is an idealized normalization, not a same-device measurement.
+    Converted time = measured time x (FP32 capacity of the device used / FP32 capacity of the reference device,
+    the NVIDIA GeForce RTX 5070 Ti); CPU times are unchanged. This is an idealized normalization, not a
+    same-device measurement.
     """
     d = ordered(read("runtime.csv"))
     factor = d["gpu"].map(lambda g: 1.0 if pd.isna(g) else FP32_TFLOPS[g] / FP32_TFLOPS[FP32_REFERENCE])
@@ -315,6 +382,11 @@ def build():
         "S25": s18b,
         "S26": s18a,
         "S27": t19_sensitivity(),
+        # Manuscript layouts of Supplementary Tables S1, S9, S10 and S12 (text labels and rounding as printed).
+        "S1_manuscript": s1_manuscript(),
+        "S9_manuscript": s9_manuscript(),
+        "S10_manuscript": s10_manuscript(),
+        "S12_manuscript": s12_manuscript(),
     }
     for name, file in (("S9", "S9_predictor_summary.csv"), ("S10", "S10_predictor_distribution.csv"),
                        ("S12", "S12_imputation_comparison_h6.csv")):

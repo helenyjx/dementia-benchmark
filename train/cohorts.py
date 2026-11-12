@@ -93,12 +93,12 @@ def build(tracker_path):
         case = alive & observed_case
         control = alive & ~observed_case & assessments[final].eq(0)
         any_control = alive & ~observed_case & assessments.eq(0).any(axis=1)
-        unresolved = ~(case | control | death)
-        lost = unresolved & ~final_interview
+        no_outcome = ~(case | control | death)
+        lost = no_outcome & ~final_interview
         status = np.select([case, control, death & observed_case, death, lost],
                            ["incident dementia", "confirmed non-dementia",
                             "death with observed dementia", "death without observed dementia",
-                            "loss to follow-up"], default="unresolved after final interview")
+                            "loss to follow-up"], default="outcome not available")
         window = f"{year}-{final}"
         ledger = assessments.rename(columns=lambda w: f"dementia_{w}").assign(
             tracker_final_vital=final_vital, tracker_final_interview=final_interview,
@@ -115,7 +115,7 @@ def build(tracker_path):
         counts = [len(base), int((case | control).sum()), int(case.sum()),
                   int((case & missing_before_case).sum()), int(control.sum()),
                   int((control & assessments.iloc[:, :-1].isna().any(axis=1)).sum()),
-                  int(lost.sum()), int((unresolved & final_interview).sum()), int(death.sum()),
+                  int(lost.sum()), int((no_outcome & final_interview).sum()), int(death.sum()),
                   int((death & observed_case).sum()), int((death & ~observed_case).sum())]
         assert counts[0] == counts[1] + counts[6] + counts[7] + counts[8]
         assert counts[1] == counts[2] + counts[4] and counts[8] == counts[9] + counts[10]
@@ -140,7 +140,7 @@ def build(tracker_path):
                           "eligible": counts[0], "analytic cohort": counts[1],
                           "incident dementia": counts[2], "confirmed non-dementia": counts[4],
                           "excluded: loss to follow-up": counts[6],
-                          "excluded: unresolved after final interview": counts[7],
+                          "excluded: outcome not available after final interview": counts[7],
                           "excluded: died by final wave": counts[8],
                           "excluded: death with observed dementia": counts[9],
                           "excluded: death without observed dementia": counts[10],
@@ -155,8 +155,8 @@ def build(tracker_path):
         ("  First dementia observation after a missing intermediate assessment", "Y = 1", "subset"),
         ("Confirmed non-dementia at the final wave", "Y = 0", ""),
         ("  Confirmed at final assessment after a missing intermediate assessment", "Y = 0", "subset"),
-        ("Loss to follow-up (no final interview and no assignable outcome)", "Excluded", ""),
-        ("Unresolved after final interview", "Excluded", ""),
+        ("Loss to follow-up (alive or vital status unknown; no final-wave assessment)", "Excluded", ""),
+        ("Outcome not available (dementia status undetermined after final interview)", "Excluded", ""),
         ("Died by the final wave", "Excluded", ""),
         ("  With observed dementia", "Excluded", "subset"),
         ("  Without observed dementia", "Excluded", "subset"),
@@ -168,6 +168,7 @@ def build(tracker_path):
         "baseline": "age > 50 and observed dementia-free at baseline",
         "alive": "Final Tracker ALIVE=1 without a death flag (5/6) at any follow-up wave or a known death year preceding the final wave",
         "loss_to_followup": "No final core interview and no assignable outcome, excluding deaths",
+        "outcome_not_available": "Interviewed at the final wave but dementia status undetermined (no observed dementia and no dementia-free assessment at the final wave)",
         "sensitivity": "Allow an observed dementia-free assessment at any follow-up for confirmed survivors with no observed dementia",
         "predictors": 60, "model_inputs": predictors,
         "sources_sha256": {str(f): sha256(f) for f in dict.fromkeys(files)},

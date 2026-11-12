@@ -12,8 +12,8 @@
   },
   {
    "path": "tables/audited_sources/S1_outcome_flow.csv",
-   "bytes": 816,
-   "sha256": "f686fcde0d3339a31ca5134d024430c3143d8d884bb153659b1f866200742d99"
+   "bytes": 869,
+   "sha256": "f99f69fe2b4e64e3646e5bb37031ddd9ec59680ca99b5aa4cc3163fa017e2f7f"
   },
   {
    "path": "tables/audited_sources/S9_predictor_summary.csv",
@@ -92,8 +92,8 @@
   },
   {
    "path": "tables/audited_sources/participant_flow.csv",
-   "bytes": 857,
-   "sha256": "2ef605fa8409941df3141d4fe35b521a5eb10a653fce3557971625cdeceb5de5"
+   "bytes": 868,
+   "sha256": "50d953972e443ca79dc726b0891202bbbdd4303d6f66cf7c96e42ab7221cb420"
   },
   {
    "path": "tables/audited_sources/runtime.csv",
@@ -142,8 +142,8 @@
   },
   {
    "path": "tables/audited_sources/supplementary/S1.csv",
-   "bytes": 816,
-   "sha256": "f686fcde0d3339a31ca5134d024430c3143d8d884bb153659b1f866200742d99"
+   "bytes": 869,
+   "sha256": "f99f69fe2b4e64e3646e5bb37031ddd9ec59680ca99b5aa4cc3163fa017e2f7f"
   },
   {
    "path": "tables/audited_sources/supplementary/S10.csv",
@@ -152,8 +152,8 @@
   },
   {
    "path": "tables/audited_sources/supplementary/S11.csv",
-   "bytes": 4084,
-   "sha256": "3bdea5dcc855c1224a998aa508b6d1a989effa0a426c72a4144d57d3b07b124f"
+   "bytes": 4093,
+   "sha256": "5f3b18c0fef233c2e83ed3957e743beae174a7337fd53b601117ea9014f5499d"
   },
   {
    "path": "tables/audited_sources/supplementary/S12.csv",
@@ -168,7 +168,7 @@
   {
    "path": "tables/audited_sources/supplementary/S14.csv",
    "bytes": 1424,
-   "sha256": "edc24eed7a432b81c82ce2e21e8015cadf01fddec5f12266411c92b02fa759a4"
+   "sha256": "38a0ddd9f9419aa214fd0560df98f4e6028f84505d38c85189abf0d9cc67d2a1"
   },
   {
    "path": "tables/audited_sources/supplementary/S15.csv",
@@ -242,8 +242,8 @@
   },
   {
    "path": "tables/audited_sources/supplementary/S27.csv",
-   "bytes": 12731,
-   "sha256": "2a1955e75d68292ad21e5bf1d5fd7aa54ca1344b718d93ea3e7c7d6b7b8b5364"
+   "bytes": 12755,
+   "sha256": "884252a894076ece3f8a0752374510d9bbabab16030a782a8cbcc3a5d27ebbd1"
   },
   {
    "path": "tables/audited_sources/supplementary/S9.csv",
@@ -271,9 +271,29 @@
    "sha256": "894d89189e3bd39b37f117e7ab444113331a040e6ad60aee3a9e5f842474711a"
   },
   {
+   "path": "tables/manuscript_format/S1.csv",
+   "bytes": 1129,
+   "sha256": "00bc6a2e0a6c3c7c6d89e0e6d0a8b5da1e3fea33eda52e76df9e9e3a900333ce"
+  },
+  {
+   "path": "tables/manuscript_format/S10.csv",
+   "bytes": 6702,
+   "sha256": "139c193b97f434ba7cb0f132d0755b6935ceb3a55243041d3084f29038bdf19e"
+  },
+  {
+   "path": "tables/manuscript_format/S12.csv",
+   "bytes": 2408,
+   "sha256": "fbd4f28dcf60488bc0ed1e94ab08c310b2a8c70141109e62c8b9a102955f9f2c"
+  },
+  {
+   "path": "tables/manuscript_format/S9.csv",
+   "bytes": 1419,
+   "sha256": "a9dccc20035699a69faaca59942f051be801a210f8cc0a67ec869a59256eafca"
+  },
+  {
    "path": "tables/outcome_flow/Supplementary_Table_S1_English_status.csv",
-   "bytes": 856,
-   "sha256": "f727433ef1e89a098d33e91766ef914a2c30f67ace3abe524377bc29708be102"
+   "bytes": 909,
+   "sha256": "12a9e6759cc8caf81adf44b4be16f0d75b42a50368c9eceaf558f48d9f6373c6"
   },
   {
    "path": "tables/runtime/HRS_runtime_measured_and_estimated.xlsx",
@@ -318,7 +338,7 @@
   {
    "path": "verification/source_status.json",
    "bytes": 32870,
-   "sha256": "896c7b857c1c9c2c0bca4d0fc09d3bddf3029ece8f3d147cdd1e25d577e80db5"
+   "sha256": "825f1857122a7745c5898f0d1b89da9ef433699b549841b10c19c21c2b77454f"
   },
   {
    "path": "verification/tabicl_cross_device_acceptance.json",

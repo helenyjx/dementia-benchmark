@@ -322,10 +322,10 @@
   <g id="excluded_status">
   <rect x="85" y="448" width="410" height="72" rx="16" fill="#f1f0eb" stroke="#c6d2c5" stroke-width="2"/>
   <text x="101" y="479" font-family="Arial, sans-serif" font-weight="bold" font-size="23" fill="#231f20">Death</text>
-  <text x="101" y="506" font-family="ArialMT, Arial" font-size="18" fill="#657269">Excluded from primary analysis</text>
+  <text x="101" y="506" font-family="ArialMT, Arial" font-size="18" fill="#657269">Excluded from analysis</text>
   <rect x="507" y="448" width="508" height="72" rx="16" fill="#f1f0eb" stroke="#c6d2c5" stroke-width="2"/>
   <text x="523" y="479" font-family="Arial, sans-serif" font-weight="bold" font-size="23" fill="#231f20">Loss to Follow-Up</text>
-  <text x="523" y="506" font-family="ArialMT, Arial" font-size="18" fill="#657269">Excluded from primary analysis</text>
+  <text x="523" y="506" font-family="ArialMT, Arial" font-size="18" fill="#657269">Excluded from analysis</text>
   <rect x="1027" y="448" width="678" height="72" rx="16" fill="#f1f0eb" stroke="#c6d2c5" stroke-width="2"/>
   <text x="1043" y="479" font-family="Arial, sans-serif" font-weight="bold" font-size="23" fill="#231f20">Unknown Dementia Status</text>
   <text x="1043" y="506" font-family="ArialMT, Arial" font-size="18" fill="#657269">Resolved using later assessments if possible; otherwise excluded</text>
@@ -335,7 +335,7 @@
   <rect x="85" y="578" width="1620" height="46" fill="#f6e3e2" stroke="#d69da0" stroke-width="1.5"/>
   <text x="103" y="608" font-family="Arial, sans-serif" font-weight="bold" font-size="22" fill="#231f20">Follow-Up Status</text>
   <text x="1355" y="608" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="22" fill="#231f20">Outcome Label</text>
-  <text x="1592" y="608" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="22" fill="#231f20">Primary Analysis</text>
+  <text x="1592" y="608" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="22" fill="#231f20">Analysis</text>
   <rect x="85" y="624" width="1620" height="42" fill="#fce3e2" stroke="#d69da0" stroke-width="1.5"/>
   <text x="103" y="652" font-family="ArialMT, Arial" font-size="21" fill="#231f20">Dementia at any follow-up assessment, regardless of later death or nonresponse</text>
   <text x="1355" y="652" text-anchor="middle" font-family="ArialMT, Arial" font-size="21" fill="#231f20">Y = 1</text>
@@ -349,7 +349,7 @@
   <text x="1355" y="736" text-anchor="middle" font-family="ArialMT, Arial" font-size="21" fill="#231f20">—</text>
   <text x="1592" y="736" text-anchor="middle" font-family="ArialMT, Arial" font-size="21" fill="#657269">Exclude</text>
   <rect x="85" y="750" width="1620" height="42" fill="#f1f0eb" stroke="#d69da0" stroke-width="1.5"/>
-  <text x="103" y="778" font-family="ArialMT, Arial" font-size="21" fill="#231f20">Lost to follow-up: alive or vital status unknown, not assessed at final wave</text>
+  <text x="103" y="778" font-family="ArialMT, Arial" font-size="21" fill="#231f20">Lost to follow-up: alive or vital status unknown, no final-wave assessment</text>
   <text x="1355" y="778" text-anchor="middle" font-family="ArialMT, Arial" font-size="21" fill="#231f20">—</text>
   <text x="1592" y="778" text-anchor="middle" font-family="ArialMT, Arial" font-size="21" fill="#657269">Exclude</text>
   <rect x="85" y="792" width="1620" height="42" fill="#fce3e2" stroke="#d69da0" stroke-width="1.5"/>
@@ -435,7 +435,7 @@
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st7" transform="translate(119.71 988)"><tspan x="0" y="0">Not assessed or unresolved: 1,213</tspan></text>
+      <text class="st7" text-anchor="middle" transform="translate(273.71 982)"><tspan x="0" y="0">Loss to follow-up or</tspan></text><text class="st7" text-anchor="middle" transform="translate(273.71 1007)"><tspan x="0" y="0">outcome not available: 1,213</tspan></text>
     </g>
   </g>
   <path class="st37" d="M268.5,1015v13.95"/>
@@ -479,7 +479,7 @@
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st7" transform="translate(516.97 988)"><tspan x="0" y="0">Not assessed or unresolved: 1,224</tspan></text>
+      <text class="st7" text-anchor="middle" transform="translate(670.97 982)"><tspan x="0" y="0">Loss to follow-up or</tspan></text><text class="st7" text-anchor="middle" transform="translate(670.97 1007)"><tspan x="0" y="0">outcome not available: 1,224</tspan></text>
     </g>
   </g>
   <path class="st37" d="M666.5,1015v13.95"/>
@@ -569,7 +569,7 @@
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st7" transform="translate(973.97 988)"><tspan x="0" y="0">Not assessed or unresolved: 2,294</tspan></text>
+      <text class="st7" text-anchor="middle" transform="translate(1127.97 982)"><tspan x="0" y="0">Loss to follow-up or</tspan></text><text class="st7" text-anchor="middle" transform="translate(1127.97 1007)"><tspan x="0" y="0">outcome not available: 2,294</tspan></text>
     </g>
   </g>
   <path class="st37" d="M1123.5,1015v13.95"/>
@@ -613,7 +613,7 @@
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st7" transform="translate(1371.9688 988)"><tspan x="0" y="0">Not assessed or unresolved: 3,820</tspan></text>
+      <text class="st7" text-anchor="middle" transform="translate(1525.97 982)"><tspan x="0" y="0">Loss to follow-up or</tspan></text><text class="st7" text-anchor="middle" transform="translate(1525.97 1007)"><tspan x="0" y="0">outcome not available: 3,820</tspan></text>
     </g>
   </g>
   <path class="st37" d="M1521.5,1015v13.95"/>
@@ -646,57 +646,57 @@
   <path class="st49" d="M121,1277c0,11.05-8.95,20-20,20s-20-8.95-20-20,8.95-20,20-20,20,8.95,20,20Z"/>
   <g class="st10">
     <g class="st10">
-      <text class="st17" transform="translate(94.6042 1284)"><tspan x="0" y="0">2</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st15" transform="translate(136 1287)"><tspan x="0" y="0">Internal Validation</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st12" transform="translate(191.3828 1325)"><tspan x="0" y="0">2000 features + follow-up labels: 2002-2006 / 2002-2008</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st1" transform="translate(220.4688 1358)"><tspan x="0" y="0">6-Year / 8-Year Prediction | Stratified Sampling</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st1" transform="translate(141.7402 1397)"><tspan x="0" y="0">Training 60%</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st1" transform="translate(141.9395 1432)"><tspan x="0" y="0">8,194 / 7,764</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st1" transform="translate(387.834 1397)"><tspan x="0" y="0">Validation 20%</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st1" transform="translate(396.9395 1432)"><tspan x="0" y="0">2,732 / 2,589</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st1" transform="translate(672.6406 1397)"><tspan x="0" y="0">Test 20%</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st1" transform="translate(651.9395 1432)"><tspan x="0" y="0">2,732 / 2,589</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st1" transform="translate(237.2441 1470)"><tspan x="0" y="0">Training:Validation:Test = 6:2:2 | 10 repeats</tspan></text>
+      
     </g>
   </g>
   <path class="st30" d="M96,1490h743c2.76,0,5,2.24,5,5v154c0,2.76-2.24,5-5,5H96c-2.76,0-5-2.24-5-5v-154c0-2.76,2.24-5,5-5Z"/>
@@ -707,17 +707,17 @@
   <path class="st22" d="M91,1614h753"/>
   <g class="st10">
     <g class="st10">
-      <text class="st12" transform="translate(167.9937 1518)"><tspan x="0" y="0">Training 1</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st12" transform="translate(167.9937 1558)"><tspan x="0" y="0">Training 2</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st12" transform="translate(161.876 1642)"><tspan x="0" y="0">Training 10</tspan></text>
+      
     </g>
   </g>
   <path class="st20" d="M218.1,1583c0,.88-.72,1.6-1.6,1.6s-1.6-.72-1.6-1.6.72-1.6,1.6-1.6,1.6.72,1.6,1.6Z"/>
@@ -725,17 +725,17 @@
   <path class="st20" d="M218.1,1599c0,.88-.72,1.6-1.6,1.6s-1.6-.72-1.6-1.6.72-1.6,1.6-1.6,1.6.72,1.6,1.6Z"/>
   <g class="st10">
     <g class="st10">
-      <text class="st12" transform="translate(410.8296 1518)"><tspan x="0" y="0">Validation 1</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st12" transform="translate(410.8296 1558)"><tspan x="0" y="0">Validation 2</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st12" transform="translate(404.7119 1642)"><tspan x="0" y="0">Validation 10</tspan></text>
+      
     </g>
   </g>
   <path class="st20" d="M469.1,1583c0,.88-.72,1.6-1.6,1.6s-1.6-.72-1.6-1.6.72-1.6,1.6-1.6,1.6.72,1.6,1.6Z"/>
@@ -743,17 +743,17 @@
   <path class="st20" d="M469.1,1599c0,.88-.72,1.6-1.6,1.6s-1.6-.72-1.6-1.6.72-1.6,1.6-1.6,1.6.72,1.6,1.6Z"/>
   <g class="st10">
     <g class="st10">
-      <text class="st12" transform="translate(689.1523 1518)"><tspan x="0" y="0">Test 1</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st12" transform="translate(689.1523 1558)"><tspan x="0" y="0">Test 2</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st12" transform="translate(683.0347 1642)"><tspan x="0" y="0">Test 10</tspan></text>
+      
     </g>
   </g>
   <path class="st20" d="M720.1,1583c0,.88-.72,1.6-1.6,1.6s-1.6-.72-1.6-1.6.72-1.6,1.6-1.6,1.6.72,1.6,1.6Z"/>
@@ -761,103 +761,103 @@
   <path class="st20" d="M720.1,1599c0,.88-.72,1.6-1.6,1.6s-1.6-.72-1.6-1.6.72-1.6,1.6-1.6,1.6.72,1.6,1.6Z"/>
   <g class="st10">
     <g class="st10">
-      <text class="st2" transform="translate(254.2952 1689)"><tspan x="0" y="0">Final analytic sample: n = 13,658 / 12,942</tspan></text>
+      
     </g>
   </g>
   <path class="st32" d="M931,1245h783c8.84,0,16,7.16,16,16v433c0,8.84-7.16,16-16,16h-783c-8.84,0-16-7.16-16-16v-433c0-8.84,7.16-16,16-16Z"/>
   <path class="st49" d="M976,1277c0,11.05-8.95,20-20,20s-20-8.95-20-20,8.95-20,20-20,20,8.95,20,20Z"/>
   <g class="st10">
     <g class="st10">
-      <text class="st17" transform="translate(949.6042 1284)"><tspan x="0" y="0">3</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st15" transform="translate(991 1287)"><tspan x="0" y="0">Temporal Validation</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st4" transform="translate(1095.3745 1326)"><tspan x="0" y="0">Training: full HRS 2000 analytic sample</tspan></text>
+      
     </g>
   </g>
   <path class="st25" d="M951,1344h345c8.84,0,16,7.16,16,16v72c0,8.84-7.16,16-16,16h-345c-8.84,0-16-7.16-16-16v-72c0-8.84,7.16-16,16-16Z"/>
   <g class="st10">
     <g class="st10">
-      <text class="st1" transform="translate(1020.2051 1375)"><tspan x="0" y="0">6-Year (n = 13,658)</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st7" transform="translate(972.0303 1405)"><tspan x="0" y="0">2000 (Features) + follow-up labels</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st12" transform="translate(1070.8955 1433)"><tspan x="0" y="0">2002-2006</tspan></text>
+      
     </g>
   </g>
   <path class="st25" d="M1349,1344h345c8.84,0,16,7.16,16,16v72c0,8.84-7.16,16-16,16h-345c-8.84,0-16-7.16-16-16v-72c0-8.84,7.16-16,16-16Z"/>
   <g class="st10">
     <g class="st10">
-      <text class="st1" transform="translate(1418.2051 1375)"><tspan x="0" y="0">8-Year (n = 12,942)</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st7" transform="translate(1370.0303 1405)"><tspan x="0" y="0">2000 (Features) + follow-up labels</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st12" transform="translate(1468.8955 1433)"><tspan x="0" y="0">2002-2008</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st4" transform="translate(1138.2466 1486)"><tspan x="0" y="0">Test: HRS 2010 analytic sample</tspan></text>
+      
     </g>
   </g>
   <path class="st25" d="M951,1504h345c8.84,0,16,7.16,16,16v72c0,8.84-7.16,16-16,16h-345c-8.84,0-16-7.16-16-16v-72c0-8.84,7.16-16,16-16Z"/>
   <g class="st10">
     <g class="st10">
-      <text class="st1" transform="translate(1020.2051 1535)"><tspan x="0" y="0">6-Year (n = 14,659)</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st7" transform="translate(972.0303 1565)"><tspan x="0" y="0">2010 (Features) + follow-up labels</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st12" transform="translate(1070.8955 1593)"><tspan x="0" y="0">2012-2016</tspan></text>
+      
     </g>
   </g>
   <path class="st25" d="M1349,1504h345c8.84,0,16,7.16,16,16v72c0,8.84-7.16,16-16,16h-345c-8.84,0-16-7.16-16-16v-72c0-8.84,7.16-16,16-16Z"/>
   <g class="st10">
     <g class="st10">
-      <text class="st1" transform="translate(1418.2051 1535)"><tspan x="0" y="0">8-Year (n = 12,564)</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st7" transform="translate(1370.0303 1565)"><tspan x="0" y="0">2010 (Features) + follow-up labels</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st12" transform="translate(1468.8955 1593)"><tspan x="0" y="0">2012-2018</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st1" transform="translate(1129.0469 1650)"><tspan x="0" y="0">Models fitted on the full 2000 sample;</tspan></text>
+      
     </g>
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st1" transform="translate(1134.3555 1686)"><tspan x="0" y="0">Evaluated once on the 2010 sample.</tspan></text>
+      
     </g>
   </g>
   <path class="st38" d="M467.5,1710v26"/>
@@ -1013,7 +1013,7 @@
   </g>
   <g class="st10">
     <g class="st10">
-      <text class="st5" transform="translate(60 2185)"><tspan x="0" y="0">Missing predictors are retained and imputed in the primary analysis.</tspan></text>
+      <text class="st5" transform="translate(60 2185)"><tspan x="0" y="0">Missing predictors are retained and imputed in the analysis.</tspan></text>
     </g>
   </g>
 </g>

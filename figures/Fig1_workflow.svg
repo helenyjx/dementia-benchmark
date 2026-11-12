@@ -35,8 +35,8 @@
 <path d="M635,507H529" fill="none" stroke="#9b9b9b" stroke-width="3.2" marker-end="url(#ah)"/>
 <text x="105.0" y="492.0" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#1c1c1c" text-anchor="middle">NO</text>
 <text x="585.0" y="492.0" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#1c1c1c" text-anchor="middle">NO</text>
-<text x="345.0" y="594.0" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#1c1c1c" text-anchor="middle">Died by the final wave, lost to follow-up, or unknown</text>
-<text x="345.0" y="626.0" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#1c1c1c" text-anchor="middle">status: excluded from the primary analysis</text>
+<text x="345.0" y="594.0" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#1c1c1c" text-anchor="middle">Died by the final wave, lost to follow-up, or outcome</text>
+<text x="345.0" y="626.0" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#1c1c1c" text-anchor="middle">not available: excluded from the analysis</text>
 <rect x="690" y="20" width="760" height="640" rx="16" fill="#bee6f6" stroke="#a9a3a3" stroke-width="4"/>
 <text x="1070.0" y="80.0" font-family="Arial, Helvetica, sans-serif" font-size="46" fill="#1c1c1c" text-anchor="middle">Internal Validation</text>
 <path d="M690,104H1450" fill="none" stroke="#9e9e9e" stroke-width="4.5"/>
@@ -120,24 +120,24 @@
 <text x="1703.0" y="632.0" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#1c1c1c" text-anchor="middle">Model Performance</text>
 <path d="M1781,488H1801V482L1813,492L1801,502V496H1781Z" fill="#a9a9a9"/>
 <rect x="1847.0" y="410" width="165.3" height="52" fill="#138341" stroke="#ffffff" stroke-width="1.5"/>
-<text x="1929.7" y="443.0" font-family="Arial, Helvetica, sans-serif" font-size="20.5" fill="#ffffff" text-anchor="middle">Age</text>
+<text x="1929.7" y="443" font-family="Arial, Helvetica, sans-serif" font-size="20.5" fill="#ffffff" text-anchor="middle">Age</text>
 <rect x="2016.3" y="410" width="165.3" height="52" fill="#6db944" stroke="#ffffff" stroke-width="1.5"/>
-<text x="2099.0" y="443.0" font-family="Arial, Helvetica, sans-serif" font-size="20.5" fill="#1c1c1c" text-anchor="middle">Education</text>
+<text x="2098.9" y="443" font-family="Arial, Helvetica, sans-serif" font-size="20.5" fill="#1c1c1c" text-anchor="middle">Education</text>
 <rect x="2185.7" y="410" width="165.3" height="52" fill="#6db944" stroke="#ffffff" stroke-width="1.5"/>
-<text x="2268.3" y="443.0" font-family="Arial, Helvetica, sans-serif" font-size="20.5" fill="#1c1c1c" text-anchor="middle">Race/ethnicity</text>
+<text x="2268.3" y="443" font-family="Arial, Helvetica, sans-serif" font-size="20.5" fill="#1c1c1c" text-anchor="middle">Race/ethnicity</text>
 <rect x="1847.0" y="466" width="165.3" height="52" fill="#6db944" stroke="#ffffff" stroke-width="1.5"/>
-<text x="1929.7" y="489.0" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1c1c1c" text-anchor="middle">Difficulty using</text>
-<text x="1929.7" y="509.0" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1c1c1c" text-anchor="middle">a map</text>
+<text x="1929.7" y="489" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1c1c1c" text-anchor="middle">Difficulty using</text>
+<text x="1929.7" y="509" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1c1c1c" text-anchor="middle">a map</text>
 <rect x="2016.3" y="466" width="165.3" height="52" fill="#8cc888" stroke="#ffffff" stroke-width="1.5"/>
-<text x="2099.0" y="499.0" font-family="Arial, Helvetica, sans-serif" font-size="16.5" fill="#1c1c1c" text-anchor="middle">Labor force status</text>
+<text x="2098.9" y="499" font-family="Arial, Helvetica, sans-serif" font-size="16.5" fill="#1c1c1c" text-anchor="middle">Labor force status</text>
 <rect x="2185.7" y="466" width="165.3" height="52" fill="#8cc888" stroke="#ffffff" stroke-width="1.5"/>
-<text x="2268.3" y="499.0" font-family="Arial, Helvetica, sans-serif" font-size="16.5" fill="#1c1c1c" text-anchor="middle">Ever drinks alcohol</text>
+<text x="2268.3" y="499" font-family="Arial, Helvetica, sans-serif" font-size="16.5" fill="#1c1c1c" text-anchor="middle">Ever drinks alcohol</text>
 <rect x="1847.0" y="522" width="165.3" height="52" fill="#a8d3a0" stroke="#ffffff" stroke-width="1.5"/>
-<text x="1929.7" y="555.0" font-family="Arial, Helvetica, sans-serif" font-size="20.5" fill="#1c1c1c" text-anchor="middle">Weight</text>
+<text x="1929.7" y="555" font-family="Arial, Helvetica, sans-serif" font-size="20.5" fill="#1c1c1c" text-anchor="middle">Weight</text>
 <rect x="2016.3" y="522" width="165.3" height="52" fill="#a8d3a0" stroke="#ffffff" stroke-width="1.5"/>
-<text x="2099.0" y="555.0" font-family="Arial, Helvetica, sans-serif" font-size="20.5" fill="#1c1c1c" text-anchor="middle">CES-D: effort</text>
+<text x="2098.9" y="555" font-family="Arial, Helvetica, sans-serif" font-size="20.5" fill="#1c1c1c" text-anchor="middle">CES-D: effort</text>
 <rect x="2185.7" y="522" width="165.3" height="52" fill="#a8d3a0" stroke="#ffffff" stroke-width="1.5"/>
-<text x="2268.3" y="555.0" font-family="Arial, Helvetica, sans-serif" font-size="20.5" fill="#1c1c1c" text-anchor="middle">Marital status</text>
+<text x="2268.3" y="555" font-family="Arial, Helvetica, sans-serif" font-size="20.5" fill="#1c1c1c" text-anchor="middle">Marital status</text>
 <path d="M1840,400V581H2359.0" fill="none" stroke="#333" stroke-width="2.4"/>
 <text x="2092.0" y="632.0" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#1c1c1c" text-anchor="middle">Feature Importance</text>
 </svg>

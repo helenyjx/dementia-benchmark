@@ -1,0 +1,943 @@
+{
+ "S1": [
+  [
+   "Eligible sample size at baseline",
+   "baseline"
+  ],
+  [
+   "Analytic sample size",
+   "1 or 0"
+  ],
+  [
+   "Incident dementia: dementia at any follow-up assessment and alive at the final wave",
+   "1"
+  ],
+  [
+   "Missing intermediate assessment, dementia identified later",
+   "1 (subset)"
+  ],
+  [
+   "Adequately observed non-dementia: confirmed dementia-free at final wave",
+   "0"
+  ],
+  [
+   "Missing assessments, subsequently confirmed dementia-free at final assessment",
+   "0 (subset)"
+  ],
+  [
+   "Loss to follow-up: alive or vital status unknown, no final-wave assessment",
+   "Excluded"
+  ],
+  [
+   "Outcome not available: dementia status undetermined after final interview",
+   "Excluded"
+  ],
+  [
+   "Death: died before final wave, any dementia history",
+   "Excluded"
+  ],
+  [
+   "Died, dementia observed",
+   "Excluded (subset)"
+  ],
+  [
+   "Died, no dementia observed",
+   "Excluded (subset)"
+  ]
+ ],
+ "S9_variables": [
+  "ageym",
+  "height",
+  "weight",
+  "momage",
+  "dadage",
+  "child",
+  "livpar",
+  "livsib",
+  "nrstim",
+  "nrsnit",
+  "doctim",
+  "adl5a",
+  "mobila",
+  "lgmusa",
+  "grossa",
+  "finea"
+ ],
+ "S10": [
+  [
+   "edstg",
+   "0–7 years (reference)",
+   "reference"
+  ],
+  [
+   "edstg",
+   "edstg2 8to11",
+   "edstg2 8to11"
+  ],
+  [
+   "edstg",
+   "edstg3 12",
+   "edstg3 12"
+  ],
+  [
+   "edstg",
+   "edstg4 13above",
+   "edstg4 13above"
+  ],
+  [
+   "edstg",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "cendiv",
+   "New England (reference)",
+   "reference"
+  ],
+  [
+   "cendiv",
+   "cendiv2 mid atlantic",
+   "cendiv2 mid atlantic"
+  ],
+  [
+   "cendiv",
+   "cendiv3 en central",
+   "cendiv3 en central"
+  ],
+  [
+   "cendiv",
+   "cendiv4 wn central",
+   "cendiv4 wn central"
+  ],
+  [
+   "cendiv",
+   "cendiv5 s atlantic",
+   "cendiv5 s atlantic"
+  ],
+  [
+   "cendiv",
+   "cendiv6 es central",
+   "cendiv6 es central"
+  ],
+  [
+   "cendiv",
+   "cendiv7 ws central",
+   "cendiv7 ws central"
+  ],
+  [
+   "cendiv",
+   "cendiv8 mountain",
+   "cendiv8 mountain"
+  ],
+  [
+   "cendiv",
+   "cendiv9 pacific",
+   "cendiv9 pacific"
+  ],
+  [
+   "cendiv",
+   "cendiv11 not us or inc us terr",
+   "cendiv11 not us or inc us terr"
+  ],
+  [
+   "cendiv",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "mstat",
+   "Married (reference)",
+   "reference"
+  ],
+  [
+   "mstat",
+   "mstat2 married spouse absent",
+   "mstat2 married spouse absent"
+  ],
+  [
+   "mstat",
+   "mstat3 partnered",
+   "mstat3 partnered"
+  ],
+  [
+   "mstat",
+   "mstat4 separated",
+   "mstat4 separated"
+  ],
+  [
+   "mstat",
+   "mstat5 divorced",
+   "mstat5 divorced"
+  ],
+  [
+   "mstat",
+   "mstat7 widowed",
+   "mstat7 widowed"
+  ],
+  [
+   "mstat",
+   "mstat8 never married",
+   "mstat8 never married"
+  ],
+  [
+   "mstat",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "raceeth",
+   "Non-Hispanic White (reference)",
+   "reference"
+  ],
+  [
+   "raceeth",
+   "Non-Hispanic Black",
+   "raceeth1 "
+  ],
+  [
+   "raceeth",
+   "Hispanic (any race)",
+   "raceeth2 "
+  ],
+  [
+   "raceeth",
+   "Non-Hispanic other race",
+   "raceeth3 "
+  ],
+  [
+   "raceeth",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "lbrf",
+   "Full-time work (reference)",
+   "reference"
+  ],
+  [
+   "lbrf",
+   "lbrf2 works pt",
+   "lbrf2 works pt"
+  ],
+  [
+   "lbrf",
+   "lbrf3 unemployed",
+   "lbrf3 unemployed"
+  ],
+  [
+   "lbrf",
+   "lbrf4 partly retired",
+   "lbrf4 partly retired"
+  ],
+  [
+   "lbrf",
+   "lbrf5 retired",
+   "lbrf5 retired"
+  ],
+  [
+   "lbrf",
+   "lbrf6 disabled",
+   "lbrf6 disabled"
+  ],
+  [
+   "lbrf",
+   "lbrf7 not in lbrf",
+   "lbrf7 not in lbrf"
+  ],
+  [
+   "lbrf",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "walksa",
+   "0",
+   "reference"
+  ],
+  [
+   "walksa",
+   "1",
+   "walksa"
+  ],
+  [
+   "walksa",
+   "Don’t do",
+   "walksadontdo"
+  ],
+  [
+   "walksa",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "walk1a",
+   "0",
+   "reference"
+  ],
+  [
+   "walk1a",
+   "1",
+   "walk1a"
+  ],
+  [
+   "walk1a",
+   "Don’t do",
+   "walk1adontdo"
+  ],
+  [
+   "walk1a",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "sita",
+   "0",
+   "reference"
+  ],
+  [
+   "sita",
+   "1",
+   "sita"
+  ],
+  [
+   "sita",
+   "Don’t do",
+   "sitadontdo"
+  ],
+  [
+   "sita",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "chaira",
+   "0",
+   "reference"
+  ],
+  [
+   "chaira",
+   "1",
+   "chaira"
+  ],
+  [
+   "chaira",
+   "Don’t do",
+   "chairadontdo"
+  ],
+  [
+   "chaira",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "climsa",
+   "0",
+   "reference"
+  ],
+  [
+   "climsa",
+   "1",
+   "climsa"
+  ],
+  [
+   "climsa",
+   "Don’t do",
+   "climsadontdo"
+  ],
+  [
+   "climsa",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "clim1a",
+   "0",
+   "reference"
+  ],
+  [
+   "clim1a",
+   "1",
+   "clim1a"
+  ],
+  [
+   "clim1a",
+   "Don’t do",
+   "clim1adontdo"
+  ],
+  [
+   "clim1a",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "stoopa",
+   "0",
+   "reference"
+  ],
+  [
+   "stoopa",
+   "1",
+   "stoopa"
+  ],
+  [
+   "stoopa",
+   "Don’t do",
+   "stoopadontdo"
+  ],
+  [
+   "stoopa",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "armsa",
+   "0",
+   "reference"
+  ],
+  [
+   "armsa",
+   "1",
+   "armsa"
+  ],
+  [
+   "armsa",
+   "Don’t do",
+   "armsadontdo"
+  ],
+  [
+   "armsa",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "pusha",
+   "0",
+   "reference"
+  ],
+  [
+   "pusha",
+   "1",
+   "pusha"
+  ],
+  [
+   "pusha",
+   "Don’t do",
+   "pushadontdo"
+  ],
+  [
+   "pusha",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "lifta",
+   "0",
+   "reference"
+  ],
+  [
+   "lifta",
+   "1",
+   "lifta"
+  ],
+  [
+   "lifta",
+   "Don’t do",
+   "liftadontdo"
+  ],
+  [
+   "lifta",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "dimea",
+   "0",
+   "reference"
+  ],
+  [
+   "dimea",
+   "1",
+   "dimea"
+  ],
+  [
+   "dimea",
+   "Don’t do",
+   "dimeadontdo"
+  ],
+  [
+   "dimea",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "mapa",
+   "0",
+   "reference"
+  ],
+  [
+   "mapa",
+   "1",
+   "mapa"
+  ],
+  [
+   "mapa",
+   "Don’t do",
+   "mapadontdo"
+  ],
+  [
+   "mapa",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "shlt",
+   "0",
+   "0.0"
+  ],
+  [
+   "shlt",
+   "1",
+   "1.0"
+  ],
+  [
+   "shlt",
+   "2",
+   "2.0"
+  ],
+  [
+   "shlt",
+   "3",
+   "3.0"
+  ],
+  [
+   "shlt",
+   "4",
+   "4.0"
+  ],
+  [
+   "shlt",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "smokev",
+   "0",
+   "0.0"
+  ],
+  [
+   "smokev",
+   "1",
+   "1.0"
+  ],
+  [
+   "smokev",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "proxy",
+   "0",
+   "0.0"
+  ],
+  [
+   "proxy",
+   "1",
+   "1.0"
+  ],
+  [
+   "proxy",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "effort",
+   "0",
+   "0.0"
+  ],
+  [
+   "effort",
+   "1",
+   "1.0"
+  ],
+  [
+   "effort",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "hibpe",
+   "0",
+   "0.0"
+  ],
+  [
+   "hibpe",
+   "1",
+   "1.0"
+  ],
+  [
+   "hibpe",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "diabe",
+   "0",
+   "0.0"
+  ],
+  [
+   "diabe",
+   "1",
+   "1.0"
+  ],
+  [
+   "diabe",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "vigact",
+   "0",
+   "0.0"
+  ],
+  [
+   "vigact",
+   "1",
+   "1.0"
+  ],
+  [
+   "vigact",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "slfmem",
+   "0",
+   "0.0"
+  ],
+  [
+   "slfmem",
+   "1",
+   "1.0"
+  ],
+  [
+   "slfmem",
+   "2",
+   "2.0"
+  ],
+  [
+   "slfmem",
+   "3",
+   "3.0"
+  ],
+  [
+   "slfmem",
+   "4",
+   "4.0"
+  ],
+  [
+   "slfmem",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "hlthlm",
+   "0",
+   "0.0"
+  ],
+  [
+   "hlthlm",
+   "1",
+   "1.0"
+  ],
+  [
+   "hlthlm",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "hosp",
+   "0",
+   "0.0"
+  ],
+  [
+   "hosp",
+   "1",
+   "1.0"
+  ],
+  [
+   "hosp",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "nrshom",
+   "0",
+   "0.0"
+  ],
+  [
+   "nrshom",
+   "1",
+   "1.0"
+  ],
+  [
+   "nrshom",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "depres",
+   "0",
+   "0.0"
+  ],
+  [
+   "depres",
+   "1",
+   "1.0"
+  ],
+  [
+   "depres",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "sleepr",
+   "0",
+   "0.0"
+  ],
+  [
+   "sleepr",
+   "1",
+   "1.0"
+  ],
+  [
+   "sleepr",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "whappy",
+   "0",
+   "0.0"
+  ],
+  [
+   "whappy",
+   "1",
+   "1.0"
+  ],
+  [
+   "whappy",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "flone",
+   "0",
+   "0.0"
+  ],
+  [
+   "flone",
+   "1",
+   "1.0"
+  ],
+  [
+   "flone",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "fsad",
+   "0",
+   "0.0"
+  ],
+  [
+   "fsad",
+   "1",
+   "1.0"
+  ],
+  [
+   "fsad",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "going",
+   "0",
+   "0.0"
+  ],
+  [
+   "going",
+   "1",
+   "1.0"
+  ],
+  [
+   "going",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "enlife",
+   "0",
+   "0.0"
+  ],
+  [
+   "enlife",
+   "1",
+   "1.0"
+  ],
+  [
+   "enlife",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "drink",
+   "0",
+   "0.0"
+  ],
+  [
+   "drink",
+   "1",
+   "1.0"
+  ],
+  [
+   "drink",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "smoken",
+   "0",
+   "0.0"
+  ],
+  [
+   "smoken",
+   "1",
+   "1.0"
+  ],
+  [
+   "smoken",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "cancre",
+   "0",
+   "0.0"
+  ],
+  [
+   "cancre",
+   "1",
+   "1.0"
+  ],
+  [
+   "cancre",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "lunge",
+   "0",
+   "0.0"
+  ],
+  [
+   "lunge",
+   "1",
+   "1.0"
+  ],
+  [
+   "lunge",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "hearte",
+   "0",
+   "0.0"
+  ],
+  [
+   "hearte",
+   "1",
+   "1.0"
+  ],
+  [
+   "hearte",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "stroke",
+   "0",
+   "0.0"
+  ],
+  [
+   "stroke",
+   "1",
+   "1.0"
+  ],
+  [
+   "stroke",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "arthre",
+   "0",
+   "0.0"
+  ],
+  [
+   "arthre",
+   "1",
+   "1.0"
+  ],
+  [
+   "arthre",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "toilta",
+   "0",
+   "0.0"
+  ],
+  [
+   "toilta",
+   "1",
+   "1.0"
+  ],
+  [
+   "toilta",
+   "Missing",
+   "(missing)"
+  ],
+  [
+   "gender",
+   "0",
+   "0.0"
+  ],
+  [
+   "gender",
+   "1",
+   "1.0"
+  ],
+  [
+   "gender",
+   "Missing",
+   "(missing)"
+  ]
+ ],
+ "S12_models": [
+  "Penalized LR",
+  "Gaussian NB",
+  "Decision tree",
+  "LightGBM",
+  "CatBoost",
+  "GAT",
+  "RealMLP",
+  "TabICL"
+ ],
+ "S12_strategies": [
+  "Mean imputation",
+  "No imputation",
+  "MICE"
+ ]
+}

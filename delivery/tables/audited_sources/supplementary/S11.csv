@@ -1,4 +1,4 @@
-Cohort,Horizon,Characteristic,Complete predictors,Incomplete predictors,Standardized difference,n complete / incomplete
+Baseline sample,Horizon,Characteristic,Complete predictors,Incomplete predictors,Standardized difference,n complete / incomplete
 2000 baseline,6-year,incident dementia (%),7.7,16.0,0.26,"11,228 / 2,018"
 2000 baseline,6-year,age (years),65.6,65.7,0.02,"11,228 / 2,018"
 2000 baseline,6-year,female (%),61.1,46.6,-0.29,"11,228 / 2,018"
