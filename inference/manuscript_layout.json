@@ -13,16 +13,8 @@
    "1"
   ],
   [
-   "Missing intermediate assessment, dementia identified later",
-   "1 (subset)"
-  ],
-  [
    "Adequately observed non-dementia: confirmed dementia-free at final wave",
    "0"
-  ],
-  [
-   "Missing assessments, subsequently confirmed dementia-free at final assessment",
-   "0 (subset)"
   ],
   [
    "Loss to follow-up: alive or vital status unknown, no final-wave assessment",
@@ -35,14 +27,6 @@
   [
    "Death: died before final wave, any dementia history",
    "Excluded"
-  ],
-  [
-   "Died, dementia observed",
-   "Excluded (subset)"
-  ],
-  [
-   "Died, no dementia observed",
-   "Excluded (subset)"
   ]
  ],
  "S9_variables": [

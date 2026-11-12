@@ -13,7 +13,7 @@
   {
    "path": "tables/audited_sources/S1_outcome_flow.csv",
    "bytes": 869,
-   "sha256": "f99f69fe2b4e64e3646e5bb37031ddd9ec59680ca99b5aa4cc3163fa017e2f7f"
+   "sha256": "1571816fbad5f4cc9a19bb8e036c47acc406a84eb5c4e3bbf323c1bfae21b97a"
   },
   {
    "path": "tables/audited_sources/S9_predictor_summary.csv",
@@ -143,7 +143,7 @@
   {
    "path": "tables/audited_sources/supplementary/S1.csv",
    "bytes": 869,
-   "sha256": "f99f69fe2b4e64e3646e5bb37031ddd9ec59680ca99b5aa4cc3163fa017e2f7f"
+   "sha256": "1571816fbad5f4cc9a19bb8e036c47acc406a84eb5c4e3bbf323c1bfae21b97a"
   },
   {
    "path": "tables/audited_sources/supplementary/S10.csv",
@@ -273,7 +273,7 @@
   {
    "path": "tables/manuscript_format/S1.csv",
    "bytes": 1129,
-   "sha256": "00bc6a2e0a6c3c7c6d89e0e6d0a8b5da1e3fea33eda52e76df9e9e3a900333ce"
+   "sha256": "bc7f159862d781d249816eef974770c3bad76b7507a2f32dc4a62ebca22ff282"
   },
   {
    "path": "tables/manuscript_format/S10.csv",
@@ -293,7 +293,7 @@
   {
    "path": "tables/outcome_flow/Supplementary_Table_S1_English_status.csv",
    "bytes": 909,
-   "sha256": "12a9e6759cc8caf81adf44b4be16f0d75b42a50368c9eceaf558f48d9f6373c6"
+   "sha256": "723dc4c2f42a0e52c10fa341c21c168ba2a14854b52cb812f4902ae23d930d5c"
   },
   {
    "path": "tables/runtime/HRS_runtime_measured_and_estimated.xlsx",
@@ -338,7 +338,7 @@
   {
    "path": "verification/source_status.json",
    "bytes": 32870,
-   "sha256": "825f1857122a7745c5898f0d1b89da9ef433699b549841b10c19c21c2b77454f"
+   "sha256": "022e83c7e381efd171ffe9f74f96009475e693e519a254f7c7ada6b12376c76f"
   },
   {
    "path": "verification/tabicl_cross_device_acceptance.json",

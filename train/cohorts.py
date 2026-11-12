@@ -119,7 +119,8 @@ def build(tracker_path):
                   int((death & observed_case).sum()), int((death & ~observed_case).sum())]
         assert counts[0] == counts[1] + counts[6] + counts[7] + counts[8]
         assert counts[1] == counts[2] + counts[4] and counts[8] == counts[9] + counts[10]
-        s1[window] = counts
+        # Supplementary Table S1 lists the mutually exclusive categories only.
+        s1[window] = [counts[i] for i in (0, 1, 2, 4, 6, 7, 8)]
         complete = base[predictors].notna().all(axis=1)
         n_interviewed = int(interviewed.sum())
         n_under_age = int((interviewed & ~age).sum())
@@ -152,14 +153,10 @@ def build(tracker_path):
         ("Eligible at baseline", "", "total"),
         ("Analytic cohort", "", "total"),
         ("Incident dementia", "Y = 1", ""),
-        ("  First dementia observation after a missing intermediate assessment", "Y = 1", "subset"),
         ("Confirmed non-dementia at the final wave", "Y = 0", ""),
-        ("  Confirmed at final assessment after a missing intermediate assessment", "Y = 0", "subset"),
         ("Loss to follow-up (alive or vital status unknown; no final-wave assessment)", "Excluded", ""),
         ("Outcome not available (dementia status undetermined after final interview)", "Excluded", ""),
         ("Died by the final wave", "Excluded", ""),
-        ("  With observed dementia", "Excluded", "subset"),
-        ("  Without observed dementia", "Excluded", "subset"),
     ]
     s1_frame = pd.DataFrame(descriptions, columns=["Category", "Classification", "Row type"]).assign(**s1)
     atomic_csv(s1_frame, table_dir / "S1_outcome_flow.csv")
