@@ -4,16 +4,16 @@ Analysis code for the manuscript *Benchmarking Performance of Long-Term Prognost
 
 ## Study Design
 
-### **Design.**
+### **Design**
 * Eight models (penalized logistic regression, Gaussian naïve Bayes, decision tree, LightGBM, CatBoost, RealMLP, graph attention network, TabICL) are compared for incident dementia over 6- and 8-year windows (2000–2006, 2000–2008, 2010–2016, 2010–2018). The 2000 sample is used for internal validation (10 repeated stratified 60/20/20 splits) and for fitting the temporal-validation models; the 2010 sample is used only for temporal evaluation.
 
-### **Outcome and estimand.**
+### **Outcome and Estimand**
 * Vital status comes from the HRS 2022 Tracker. All participants who died before the final wave are excluded, whether or not dementia had been observed, which treats participants with and without dementia in the same way. Among participants alive at the final wave, `y = 1` is a dementia classification at one or more biennial follow-up assessments in the window, and `y = 0` is no observed dementia plus a dementia-free assessment at the final wave. Participants alive at the final wave without a final-wave assessment and without observed dementia are excluded as lost to follow-up, and participants whose outcome otherwise remains unavailable are excluded as outcome not available. Missed intermediate assessments do not by themselves cause exclusion. The estimand is the 6- or 8-year risk of dementia among adults aged ≥51 years who were dementia-free at baseline, given that they were alive at the end of the window and had a known outcome. The sensitivity outcome (`any`) keeps the death exclusion but accepts any dementia-free follow-up assessment for confirmed survivors without observed dementia.
 
-### **Predictors and imputation.**
+### **Predictors and Imputation**
 * 60 predictors give 94 model inputs. All eligible participants with a known outcome are analyzed regardless of predictor missingness. In each split, miceforest is fitted once on the training predictors only (the outcome is never used) and applied unchanged to the validation and test subsets; the final internal model is refitted on the already-imputed training and validation data. For temporal validation the imputer and model are fitted on the full 2000 sample, and the 2010 sample is reserved for evaluation.
 
-### **Selection and evaluation.**
+### **Selection and Evaluation**
 * Hyperparameters (grids in `model/specs.py`, Table 1 of the manuscript) are chosen by validation AUPRC and the decision threshold by validation F1; test data are used once. Internal intervals use the corrected resampled t method; temporal intervals and paired differences use 2,000 household cluster bootstrap resamples. Permutation importance (five permutations, 500 household bootstrap resamples) is computed in the 2010 sample at the 6-year horizon; SHAP is exact where available and KernelSHAP (500 participants, 800 coalitions, 10 background participants) for TabICL, RealMLP and GAT.
 
 ## Repository Layout
