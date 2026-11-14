@@ -1,6 +1,6 @@
 # Benchmarking long-term prognostic models for dementia risk in the Health and Retirement Study
 
-Analysis code for the manuscript *Benchmarking Performance of Long-Term Prognostic Models for Dementia Risk Using the Health and Retirement Study*. The repository is the revised benchmark (branch `hrs-revised-benchmark`. It covers the full chain from the raw HRS files to the saved aggregate results, the supplementary tables and the manuscript figures.
+Analysis code for the manuscript *Benchmarking Performance of Long-Term Prognostic Models for Dementia Risk Using the Health and Retirement Study*. The repository is the revised benchmark. It covers the full chain from the raw HRS files to the saved aggregate results, the supplementary tables and the manuscript figures.
 
 ## Study Design
 
