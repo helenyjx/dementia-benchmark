@@ -172,76 +172,71 @@
   },
   {
    "path": "tables/audited_sources/supplementary/S15.csv",
-   "bytes": 4247,
-   "sha256": "b2f5a70d40b1c3d37ef8dc62ba48003379adc976a6fe8a5d88504b18d3253497"
-  },
-  {
-   "path": "tables/audited_sources/supplementary/S16.csv",
    "bytes": 15963,
    "sha256": "3f9e7cc0ddfbe48353325cf2bf3a709bf7cb0176fb5666ce43ccc88f217ebd04"
   },
   {
-   "path": "tables/audited_sources/supplementary/S17.csv",
+   "path": "tables/audited_sources/supplementary/S16.csv",
    "bytes": 15959,
    "sha256": "af3fc4d3de2908f4940d1e1d5e754bfd0b54f8c1532c5ee74dc38bbf575dfef2"
   },
   {
-   "path": "tables/audited_sources/supplementary/S18.csv",
+   "path": "tables/audited_sources/supplementary/S17.csv",
    "bytes": 2066,
    "sha256": "b7a7841304947c4bdc5898bf5c21f55664ae819cb53713db63a6018dd52872f8"
   },
   {
-   "path": "tables/audited_sources/supplementary/S19.csv",
+   "path": "tables/audited_sources/supplementary/S18.csv",
    "bytes": 2050,
    "sha256": "ba815f9d97939882ada5ac9a59486cf47e3047512e17f84f75b5e76e09c9d50a"
   },
   {
-   "path": "tables/audited_sources/supplementary/S20.csv",
+   "path": "tables/audited_sources/supplementary/S19.csv",
    "bytes": 2505,
    "sha256": "01c6bc17882d5f4f01613019108a7af190be1f447a29821b64383a2ff7e41a2b"
   },
   {
-   "path": "tables/audited_sources/supplementary/S21.csv",
+   "path": "tables/audited_sources/supplementary/S20.csv",
    "bytes": 126,
    "sha256": "b15d7608ab0cde2c65af1df478b60f44ba1223d5139957ab55a3608962a3ca8d"
   },
   {
-   "path": "tables/audited_sources/supplementary/S22a.csv",
+   "path": "tables/audited_sources/supplementary/S21a.csv",
    "bytes": 1898,
    "sha256": "725a611b9a7c2d7403ef2b0588481bab0cad62e4472f9ea890fffa354732eb76"
   },
   {
-   "path": "tables/audited_sources/supplementary/S22b.csv",
+   "path": "tables/audited_sources/supplementary/S21b.csv",
    "bytes": 1904,
    "sha256": "f3a9058f76459f704a682c0db9e4a6d1aa391b5eb7fde7716403cc28828162ad"
   },
   {
-   "path": "tables/audited_sources/supplementary/S23.csv",
+   "path": "tables/audited_sources/supplementary/S22.csv",
    "bytes": 2598,
    "sha256": "53f6a4c90229fe53ffc508528dbf4866a0d384c75429b7f49ccf561129793ba1"
   },
   {
-   "path": "tables/audited_sources/supplementary/S24a.csv",
+   "path": "tables/audited_sources/supplementary/S23a.csv",
    "bytes": 1938,
    "sha256": "3ed961a757299eeda75f412a3b0972140ac6d959c2be7e529a994f0e5d243ca7"
   },
   {
-   "path": "tables/audited_sources/supplementary/S24b.csv",
+   "path": "tables/audited_sources/supplementary/S23b.csv",
    "bytes": 1944,
    "sha256": "989a2952d77deccce424303c77965d51a0a996537c0791cd3567ed4fa862493c"
   },
   {
-   "path": "tables/audited_sources/supplementary/S25.csv",
+   "path": "tables/audited_sources/supplementary/S24.csv",
    "bytes": 5457,
    "sha256": "66f1436be01beedeb4acec15b132b7058e02d2590641cc2107dda4acdea63a6c"
   },
   {
-   "path": "tables/audited_sources/supplementary/S26.csv",
+   "path": "tables/audited_sources/supplementary/S25.csv",
    "bytes": 537,
    "sha256": "3ee5a62867ed38af81bde5cc568e9ccdde31ac701cb8355c1b5dbbb43e2504bf"
   },
   {
-   "path": "tables/audited_sources/supplementary/S27.csv",
+   "path": "tables/audited_sources/supplementary/S26.csv",
    "bytes": 12755,
    "sha256": "884252a894076ece3f8a0752374510d9bbabab16030a782a8cbcc3a5d27ebbd1"
   },
@@ -252,6 +247,11 @@
   },
   {
    "path": "tables/audited_sources/supplementary/Table1.csv",
+   "bytes": 4247,
+   "sha256": "b2f5a70d40b1c3d37ef8dc62ba48003379adc976a6fe8a5d88504b18d3253497"
+  },
+  {
+   "path": "tables/audited_sources/supplementary/performance_all.csv",
    "bytes": 7527,
    "sha256": "6cc80f1ae13af130e56a7a5276b3270c3a3740030c3ccba8f94be416cb87f6c4"
   },
@@ -301,7 +301,7 @@
    "sha256": "49bd8f9c942232d90ea8ce4f78e966c5f6f603bc443ee2e9c3c1055ac824e100"
   },
   {
-   "path": "tables/runtime/S20_FP32_equivalent.csv",
+   "path": "tables/runtime/S19_FP32_equivalent.csv",
    "bytes": 650,
    "sha256": "49c255d03fc67b1a367ebf9314dcd69e54cbde5277055d3fbcea5b9749fc5cc7"
   },
@@ -337,8 +337,8 @@
   },
   {
    "path": "verification/source_status.json",
-   "bytes": 32870,
-   "sha256": "022e83c7e381efd171ffe9f74f96009475e693e519a254f7c7ada6b12376c76f"
+   "bytes": 32568,
+   "sha256": "426c6ad9afad126c80e37f83704d95a0b929041a47a7413b0ffc1607248bda21"
   },
   {
    "path": "verification/tabicl_cross_device_acceptance.json",

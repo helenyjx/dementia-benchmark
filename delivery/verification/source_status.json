@@ -3,7 +3,7 @@
   "observed_at": "2026-11-10T02:53:17.795345-05:00",
   "scope": "Revised numerical table and figure data sources; historical partial tables and document/figure rendering excluded",
   "final_tables": {
-    "Table1": {
+    "performance_all": {
       "rows": 32,
       "sha256": "6cc80f1ae13af130e56a7a5276b3270c3a3740030c3ccba8f94be416cb87f6c4"
     },
@@ -23,63 +23,63 @@
       "rows": 8,
       "sha256": "38a0ddd9f9419aa214fd0560df98f4e6028f84505d38c85189abf0d9cc67d2a1"
     },
-    "S15": {
+    "Table1": {
       "rows": 16,
       "sha256": "b2f5a70d40b1c3d37ef8dc62ba48003379adc976a6fe8a5d88504b18d3253497"
     },
-    "S16": {
+    "S15": {
       "rows": 224,
       "sha256": "3f9e7cc0ddfbe48353325cf2bf3a709bf7cb0176fb5666ce43ccc88f217ebd04"
     },
-    "S17": {
+    "S16": {
       "rows": 224,
       "sha256": "af3fc4d3de2908f4940d1e1d5e754bfd0b54f8c1532c5ee74dc38bbf575dfef2"
     },
-    "S18": {
+    "S17": {
       "rows": 32,
       "sha256": "b7a7841304947c4bdc5898bf5c21f55664ae819cb53713db63a6018dd52872f8"
     },
-    "S19": {
+    "S18": {
       "rows": 32,
       "sha256": "ba815f9d97939882ada5ac9a59486cf47e3047512e17f84f75b5e76e09c9d50a"
     },
-    "S20": {
+    "S19": {
       "rows": 32,
       "sha256": "01c6bc17882d5f4f01613019108a7af190be1f447a29821b64383a2ff7e41a2b"
     },
-    "S21": {
+    "S20": {
       "rows": 2,
       "sha256": "b15d7608ab0cde2c65af1df478b60f44ba1223d5139957ab55a3608962a3ca8d"
     },
-    "S22a": {
+    "S21a": {
       "rows": 8,
       "sha256": "725a611b9a7c2d7403ef2b0588481bab0cad62e4472f9ea890fffa354732eb76"
     },
-    "S22b": {
+    "S21b": {
       "rows": 8,
       "sha256": "f3a9058f76459f704a682c0db9e4a6d1aa391b5eb7fde7716403cc28828162ad"
     },
-    "S23": {
+    "S22": {
       "rows": 32,
       "sha256": "53f6a4c90229fe53ffc508528dbf4866a0d384c75429b7f49ccf561129793ba1"
     },
-    "S24a": {
+    "S23a": {
       "rows": 8,
       "sha256": "3ed961a757299eeda75f412a3b0972140ac6d959c2be7e529a994f0e5d243ca7"
     },
-    "S24b": {
+    "S23b": {
       "rows": 8,
       "sha256": "989a2952d77deccce424303c77965d51a0a996537c0791cd3567ed4fa862493c"
     },
-    "S25": {
+    "S24": {
       "rows": 97,
       "sha256": "66f1436be01beedeb4acec15b132b7058e02d2590641cc2107dda4acdea63a6c"
     },
-    "S26": {
+    "S25": {
       "rows": 8,
       "sha256": "3ee5a62867ed38af81bde5cc568e9ccdde31ac701cb8355c1b5dbbb43e2504bf"
     },
-    "S27": {
+    "S26": {
       "rows": 64,
       "sha256": "884252a894076ece3f8a0752374510d9bbabab16030a782a8cbcc3a5d27ebbd1"
     },
@@ -97,6 +97,10 @@
     }
   },
   "table_files": {
+    "tables/S10_predictor_distribution.csv": "411f8460bb1fd665f3d323162fd2887c1454f6844c52d47a376f94663bf32bfc",
+    "tables/S12_imputation_comparison_h6.csv": "a2e8841191062792ccfdb3447da059984b2882a2d634ace529af81c48679a1f0",
+    "tables/S1_outcome_flow.csv": "1571816fbad5f4cc9a19bb8e036c47acc406a84eb5c4e3bbf323c1bfae21b97a",
+    "tables/S9_predictor_summary.csv": "72bec0dd0c1c4565750d2d8f9ea76889db171c7cc2bb717c61a9656404ee359c",
     "tables/calibration_curves.csv": "dfce4dafe45107f457448327b3492b5666cb712d383a1b885e96e24f0aeab8fc",
     "tables/cohort_overlap.csv": "33ff7dd02a6e996c3ee58295d9b75162b8a55b918ebef0b878c9669c8c37819c",
     "tables/complete_vs_incomplete.csv": "53e51b826eb6884cbc16302281e5e5529376a313b31d380adc86fe1cd2b6a2fd",
@@ -113,10 +117,6 @@
     "tables/internal_pairwise.csv": "8791adfcde15b8505a2cf778f04369d79a0635fc9ad4852869176c4db7afbae9",
     "tables/participant_flow.csv": "50d953972e443ca79dc726b0891202bbbdd4303d6f66cf7c96e42ab7221cb420",
     "tables/runtime.csv": "1b31124c05b5cce249544a5bc20611bbc582f2cce0ab27436220100f4256ee38",
-    "tables/S10_predictor_distribution.csv": "411f8460bb1fd665f3d323162fd2887c1454f6844c52d47a376f94663bf32bfc",
-    "tables/S12_imputation_comparison_h6.csv": "a2e8841191062792ccfdb3447da059984b2882a2d634ace529af81c48679a1f0",
-    "tables/S1_outcome_flow.csv": "1571816fbad5f4cc9a19bb8e036c47acc406a84eb5c4e3bbf323c1bfae21b97a",
-    "tables/S9_predictor_summary.csv": "72bec0dd0c1c4565750d2d8f9ea76889db171c7cc2bb717c61a9656404ee359c",
     "tables/sensitivity_any_calibration_curves.csv": "b4780d15381343eb181b114e3fb543b4eb895455d64bdc9a9a4dac5e1f40d684",
     "tables/sensitivity_any_decision_curves.csv": "7fb37e1723390d62f8c684d747c76df5e45891271ca49d734eaa9cf98318cb4c",
     "tables/sensitivity_any_horizon_comparison.csv": "ac55a0580ea41e44cda502abc30b6d891d5b375cd8c01faac4e0b6764f9c10bf",
@@ -131,23 +131,23 @@
     "tables/supplementary/S12.csv": "0736fe0b9dcf6ec95d8dcdc155d8e5239ed676c01a77416522dca53fbaccfa5b",
     "tables/supplementary/S13.csv": "4118d531f2fa5b9e3a4e7d0bd0bb6c5843b738409888a9548c7df65b665208d7",
     "tables/supplementary/S14.csv": "38a0ddd9f9419aa214fd0560df98f4e6028f84505d38c85189abf0d9cc67d2a1",
-    "tables/supplementary/S15.csv": "b2f5a70d40b1c3d37ef8dc62ba48003379adc976a6fe8a5d88504b18d3253497",
-    "tables/supplementary/S16.csv": "3f9e7cc0ddfbe48353325cf2bf3a709bf7cb0176fb5666ce43ccc88f217ebd04",
-    "tables/supplementary/S17.csv": "af3fc4d3de2908f4940d1e1d5e754bfd0b54f8c1532c5ee74dc38bbf575dfef2",
-    "tables/supplementary/S18.csv": "b7a7841304947c4bdc5898bf5c21f55664ae819cb53713db63a6018dd52872f8",
-    "tables/supplementary/S19.csv": "ba815f9d97939882ada5ac9a59486cf47e3047512e17f84f75b5e76e09c9d50a",
-    "tables/supplementary/S20.csv": "01c6bc17882d5f4f01613019108a7af190be1f447a29821b64383a2ff7e41a2b",
-    "tables/supplementary/S21.csv": "b15d7608ab0cde2c65af1df478b60f44ba1223d5139957ab55a3608962a3ca8d",
-    "tables/supplementary/S22a.csv": "725a611b9a7c2d7403ef2b0588481bab0cad62e4472f9ea890fffa354732eb76",
-    "tables/supplementary/S22b.csv": "f3a9058f76459f704a682c0db9e4a6d1aa391b5eb7fde7716403cc28828162ad",
-    "tables/supplementary/S23.csv": "53f6a4c90229fe53ffc508528dbf4866a0d384c75429b7f49ccf561129793ba1",
-    "tables/supplementary/S24a.csv": "3ed961a757299eeda75f412a3b0972140ac6d959c2be7e529a994f0e5d243ca7",
-    "tables/supplementary/S24b.csv": "989a2952d77deccce424303c77965d51a0a996537c0791cd3567ed4fa862493c",
-    "tables/supplementary/S25.csv": "66f1436be01beedeb4acec15b132b7058e02d2590641cc2107dda4acdea63a6c",
-    "tables/supplementary/S26.csv": "3ee5a62867ed38af81bde5cc568e9ccdde31ac701cb8355c1b5dbbb43e2504bf",
-    "tables/supplementary/S27.csv": "884252a894076ece3f8a0752374510d9bbabab16030a782a8cbcc3a5d27ebbd1",
+    "tables/supplementary/S15.csv": "3f9e7cc0ddfbe48353325cf2bf3a709bf7cb0176fb5666ce43ccc88f217ebd04",
+    "tables/supplementary/S16.csv": "af3fc4d3de2908f4940d1e1d5e754bfd0b54f8c1532c5ee74dc38bbf575dfef2",
+    "tables/supplementary/S17.csv": "b7a7841304947c4bdc5898bf5c21f55664ae819cb53713db63a6018dd52872f8",
+    "tables/supplementary/S18.csv": "ba815f9d97939882ada5ac9a59486cf47e3047512e17f84f75b5e76e09c9d50a",
+    "tables/supplementary/S19.csv": "01c6bc17882d5f4f01613019108a7af190be1f447a29821b64383a2ff7e41a2b",
+    "tables/supplementary/S20.csv": "b15d7608ab0cde2c65af1df478b60f44ba1223d5139957ab55a3608962a3ca8d",
+    "tables/supplementary/S21a.csv": "725a611b9a7c2d7403ef2b0588481bab0cad62e4472f9ea890fffa354732eb76",
+    "tables/supplementary/S21b.csv": "f3a9058f76459f704a682c0db9e4a6d1aa391b5eb7fde7716403cc28828162ad",
+    "tables/supplementary/S22.csv": "53f6a4c90229fe53ffc508528dbf4866a0d384c75429b7f49ccf561129793ba1",
+    "tables/supplementary/S23a.csv": "3ed961a757299eeda75f412a3b0972140ac6d959c2be7e529a994f0e5d243ca7",
+    "tables/supplementary/S23b.csv": "989a2952d77deccce424303c77965d51a0a996537c0791cd3567ed4fa862493c",
+    "tables/supplementary/S24.csv": "66f1436be01beedeb4acec15b132b7058e02d2590641cc2107dda4acdea63a6c",
+    "tables/supplementary/S25.csv": "3ee5a62867ed38af81bde5cc568e9ccdde31ac701cb8355c1b5dbbb43e2504bf",
+    "tables/supplementary/S26.csv": "884252a894076ece3f8a0752374510d9bbabab16030a782a8cbcc3a5d27ebbd1",
     "tables/supplementary/S9.csv": "8c62f4b97394c4f9f6a184aa90237392e0be20e7aa2666a9377e79619de62a11",
-    "tables/supplementary/Table1.csv": "6cc80f1ae13af130e56a7a5276b3270c3a3740030c3ccba8f94be416cb87f6c4",
+    "tables/supplementary/Table1.csv": "b2f5a70d40b1c3d37ef8dc62ba48003379adc976a6fe8a5d88504b18d3253497",
+    "tables/supplementary/performance_all.csv": "6cc80f1ae13af130e56a7a5276b3270c3a3740030c3ccba8f94be416cb87f6c4",
     "tables/temporal_by_overlap.csv": "997c167daa30f7a407bafeace942c4ef86ecb3a493ff327e81b859bc75a17912",
     "tables/temporal_metrics.csv": "214b55ab34b5f580e8f976e8646621913bd4f8efbe329cd03e13446ac2131c91",
     "tables/temporal_pairwise.csv": "894d89189e3bd39b37f117e7ab444113331a040e6ad60aee3a9e5f842474711a"

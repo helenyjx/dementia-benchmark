@@ -33,8 +33,8 @@ def main():
         run_stage("predictor-tables", "inference.predictor_tables", (), cpu)
         run_stage("final-table-sources", "inference.supplementary_tables", (), cpu)
         tables = ARTIFACTS / "tables"
-        expected = ["Table1", "S1", *(f"S{n}" for n in range(9, 22)), "S22a", "S22b", "S23",
-                    "S24a", "S24b", "S25", "S26", "S27"]
+        expected = ["Table1", "S1", *(f"S{n}" for n in range(9, 21)), "S21a", "S21b", "S22",
+                    "S23a", "S23b", "S24", "S25", "S26"]
         assert all((tables / "supplementary" / f"{name}.csv").is_file() for name in expected)
         save_json(status, {"state": "complete", "table_files": {
             p.relative_to(ARTIFACTS).as_posix(): sha256(p) for p in sorted(tables.rglob("*.csv"))}})

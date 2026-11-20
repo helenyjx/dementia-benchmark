@@ -326,7 +326,7 @@ FP32_REFERENCE = "NVIDIA GeForce RTX 5070 Ti"
 
 
 def t17_runtime_fp32():
-    """Table S20 as printed in the supplement: primary outcome, times converted to a common reference GPU.
+    """Table S19 as printed in the supplement: primary outcome, times converted to a common reference GPU.
 
     Converted time = measured time x (FP32 capacity of the device used / FP32 capacity of the reference device,
     the NVIDIA GeForce RTX 5070 Ti); CPU times are unchanged. This is an idealized normalization, not a
@@ -361,27 +361,27 @@ def build():
     internal = metric_table(i, MAIN_METRICS)
     temporal = metric_table(t, MAIN_METRICS)
     tables = {
-        "Table1": main,
+        "performance_all": main,
         "S1": s1_outcome_status(),
         "S11": t11_complete_vs_incomplete(),
         "S13": s13b,
         "S14": t12_overlap(),
-        "S15": t16_selection(),
-        "S16": pairwise_table("internal_pairwise.csv"),
-        "S17": pairwise_table("temporal_pairwise.csv"),
-        "S18": horizon_comparison("internal"),
-        "S19": horizon_comparison("temporal"),
-        "S20": t17_runtime(),
-        "S20_FP32_equivalent": t17_runtime_fp32(),
-        "S21": s18c,
-        "S22a": internal[internal.Horizon.eq("6-year")],
-        "S22b": internal[internal.Horizon.eq("8-year")],
-        "S23": s13a,
-        "S24a": temporal[temporal.Horizon.eq("6-year")],
-        "S24b": temporal[temporal.Horizon.eq("8-year")],
-        "S25": s18b,
-        "S26": s18a,
-        "S27": t19_sensitivity(),
+        "Table1": t16_selection(),
+        "S15": pairwise_table("internal_pairwise.csv"),
+        "S16": pairwise_table("temporal_pairwise.csv"),
+        "S17": horizon_comparison("internal"),
+        "S18": horizon_comparison("temporal"),
+        "S19": t17_runtime(),
+        "S19_FP32_equivalent": t17_runtime_fp32(),
+        "S20": s18c,
+        "S21a": internal[internal.Horizon.eq("6-year")],
+        "S21b": internal[internal.Horizon.eq("8-year")],
+        "S22": s13a,
+        "S23a": temporal[temporal.Horizon.eq("6-year")],
+        "S23b": temporal[temporal.Horizon.eq("8-year")],
+        "S24": s18b,
+        "S25": s18a,
+        "S26": t19_sensitivity(),
         # Manuscript layouts of Supplementary Tables S1, S9, S10 and S12 (text labels and rounding as printed).
         "S1_manuscript": s1_manuscript(),
         "S9_manuscript": s9_manuscript(),

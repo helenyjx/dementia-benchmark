@@ -45,7 +45,7 @@ Repeat the training and prediction commands for every model, horizon and outcome
 
 ## Outputs
 
-Everything is written under `artifacts/`: `cohorts/` (four primary and four sensitivity cohorts with label audit ledgers), `imputation/` (one training-only cache per repeat plus the temporal imputer), `checkpoints/`, `predictions/`, `importance/`, `imputation_comparison/` (mean-imputation and complete-case runs for the 6-year horizon) and `tables/` (cohort flow, death audit, performance with intervals, paired differences, calibration, decision curves, runtime, importance and `tables/supplementary/` with Table 1 and Supplementary Tables S1–S27). `artifacts/source_status.json` records the hash of every final table and `artifacts/completion_audit.json` is written only when the full scope passes.
+Everything is written under `artifacts/`: `cohorts/` (four primary and four sensitivity cohorts with label audit ledgers), `imputation/` (one training-only cache per repeat plus the temporal imputation model), `checkpoints/`, `predictions/`, `importance/`, `imputation_comparison/` (mean-imputation and complete-case runs for the 6-year horizon) and `tables/` (cohort flow, death audit, performance with intervals, paired differences, calibration, decision curves, runtime, importance and `tables/supplementary/` with Table 1 and Supplementary Tables S1–S26). `artifacts/source_status.json` records the hash of every final table and `artifacts/completion_audit.json` is written only when the full scope passes.
 
 ## Verification and hardware notes
 
