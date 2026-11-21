@@ -1,4 +1,4 @@
-# Benchmarking long-term prognostic models for dementia risk in the Health and Retirement Study
+# Benchmarking long-term Prognostic Models for Dementia Risk in the Health and Retirement Study
 
 This repository contains the analysis code for *Benchmarking Performance of Long-Term Prognostic Models for Dementia Risk Using the Health and Retirement Study*. It implements the revised benchmark, from raw HRS data through aggregate results, supplementary tables and manuscript figures.
 
