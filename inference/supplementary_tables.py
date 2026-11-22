@@ -326,7 +326,7 @@ FP32_REFERENCE = "NVIDIA GeForce RTX 5070 Ti"
 
 
 def t17_runtime_fp32():
-    """Table S19 as printed in the supplement: primary outcome, times converted to a common reference GPU.
+    """Table S19 as printed in the supplement: primary outcome, times converted to RTX 5070 Ti-equivalent times.
 
     Converted time = measured time x (FP32 capacity of the device used / FP32 capacity of the reference device,
     the NVIDIA GeForce RTX 5070 Ti); CPU times are unchanged. This is an idealized normalization, not a

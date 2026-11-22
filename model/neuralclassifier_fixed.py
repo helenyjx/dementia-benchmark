@@ -278,7 +278,7 @@ class GATClassifier(NeuralClassifier):
     def _fit_once(self, X, y, **kwargs):
         """Graph edges are built within each mini-batch from the cosine similarity of the predictors (standardized if standardize=True):
         two participants are connected if their absolute similarity is in the top (1 - alpha) share of all pairs in
-        the batch. The outcome is not used. A fixed reference set of training participants is stored for prediction."""
+        the batch. The outcome is not used. A fixed reference set of reference_size (255) participants, drawn at random from the fitting data, is stored for prediction."""
         X_np = X.to_numpy(dtype=np.float32)
         self.mean_ = X_np.mean(axis=0)
         std = X_np.std(axis=0)
@@ -290,7 +290,7 @@ class GATClassifier(NeuralClassifier):
         return super().fit(X, y, **kwargs)
 
     def predict_proba(self, X):
-        """Each participant is predicted in a graph formed with the fixed training reference set, so the prediction
+        """Each participant is predicted in a graph formed with the fixed reference set, so the prediction
         depends only on that participant and the training data, not on the other participants being predicted."""
         X_t = torch.tensor(self._scale(X).to_numpy(dtype=np.float32))
         device = 'cuda' if self.cuda_ else 'cpu'
