@@ -14,7 +14,7 @@ This repository contains the analysis code for *Benchmarking Performance of Long
 * 60 predictors give 94 model inputs. All eligible participants with a known outcome are analyzed regardless of predictor missingness. In each split, miceforest is fitted once on the training predictors only (the outcome is never used) and applied unchanged to the validation and test subsets; the final internal model is refitted on the already-imputed training and validation data. For temporal validation the imputation model and the prediction model are fitted on the full 2000 sample, and the 2010 sample is reserved for evaluation.
 
 ### **Selection and Evaluation**
-* Hyperparameters (grids in `model/specs.py`, Table 1 of the manuscript) are chosen by validation AUPRC and the decision threshold by validation F1; test data are used once. Internal intervals use the corrected resampled t method; temporal intervals and paired differences use 2,000 household cluster bootstrap resamples. Permutation importance (five permutations, 500 household bootstrap resamples) is computed in the 2010 sample at the 6-year horizon; SHAP is exact where available and KernelSHAP (500 participants, 800 coalitions, 10 background participants) for TabICL, RealMLP and GAT.
+* Hyperparameters (grids in `model/specs.py`, Table 1 of the manuscript) are chosen by validation AUPRC and the decision threshold by validation F1; test data are used once. Internal intervals use the corrected resampled t method; temporal intervals and paired differences use 2,000 household cluster bootstrap resamples. Permutation importance is computed in the 2010 sample at the 6-year horizon; SHAP is exact where available and KernelSHAP for TabICL, RealMLP and GAT.
 
 ## Repository Layout
 
